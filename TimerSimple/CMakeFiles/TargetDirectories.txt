@@ -1,0 +1,7 @@
+/home/alvaro/Escritorio/timersimple/CMakeFiles/install/strip.dir
+/home/alvaro/Escritorio/timersimple/CMakeFiles/install.dir
+/home/alvaro/Escritorio/timersimple/CMakeFiles/list_install_components.dir
+/home/alvaro/Escritorio/timersimple/CMakeFiles/rebuild_cache.dir
+/home/alvaro/Escritorio/timersimple/CMakeFiles/edit_cache.dir
+/home/alvaro/Escritorio/timersimple/CMakeFiles/install/local.dir
+/home/alvaro/Escritorio/timersimple/CMakeFiles/ejemplo1.dir
