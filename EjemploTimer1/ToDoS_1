@@ -1,0 +1,22 @@
+
+**1º TASK**
+
+  Use the first example code and extend it with a Qt QTimer object from
+  the Qt repertory of classes to activate the counter, through Qt's signals
+  and slots mechanism.
+  
+  
+  
+**2º TASK**
+
+  Study the solution proposed in the second example where a custom Timer class is implemented  
+  using only the std library.
+  
+  Complete the example adding methods to change the period, obtain 
+  the current period or obtain the elapsed time since the Timer was initiated. 
+  Be careful with variables accessed from two threads. 
+  
+  Comment in the provided code before     
+  uploading to GitHub how do the methods in Timer.h work and why those instructions are used.
+
+Make creative changes and improvements to the three examples and expose them when evaluated in the classroom. Upload the three programs to your GitHub account.
