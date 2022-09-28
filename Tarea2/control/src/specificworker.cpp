@@ -23,10 +23,10 @@
 */
 SpecificWorker::SpecificWorker(TuplePrx tprx, bool startup_check) : GenericWorker(tprx)
 {
-	this->startup_check_flag = startup_check;
-	// Uncomment if there's too many debug messages
-	// but it removes the possibility to see the messages
-	// shown in the console with qDebug()
+    this->startup_check_flag = startup_check;
+    // Uncomment if there's too many debug messages
+    // but it removes the possibility to see the messages
+    // shown in the console with qDebug()
 //	QLoggingCategory::setFilterRules("*.debug=false\n");
 }
 
@@ -35,7 +35,7 @@ SpecificWorker::SpecificWorker(TuplePrx tprx, bool startup_check) : GenericWorke
 */
 SpecificWorker::~SpecificWorker()
 {
-	std::cout << "Destroying SpecificWorker" << std::endl;
+    std::cout << "Destroying SpecificWorker" << std::endl;
 }
 
 bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
@@ -55,47 +55,65 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 
 
 
-	return true;
+    return true;
 }
 
 void SpecificWorker::initialize(int period)
 {
-	std::cout << "Initialize worker" << std::endl;
-	this->Period = period;
-	if(this->startup_check_flag)
-	{
-		this->startup_check();
-	}
-	else
-	{
-		timer.start(Period);
-	}
+    std::cout << "Initialize worker" << std::endl;
+    this->Period = period;
+    if(this->startup_check_flag)
+    {
+        this->startup_check();
+    }
+    else
+    {
+        timer.start(Period);
+    }
 
 }
 
 void SpecificWorker::compute()
 {
-	//computeCODE
-	//QMutexLocker locker(mutex);
-	//try
-	//{
-	//  camera_proxy->getYImage(0,img, cState, bState);
-	//  memcpy(image_gray.data, &img[0], m_width*m_height*sizeof(uchar));
-	//  searchTags(image_gray);
-	//}
-	//catch(const Ice::Exception &e)
-	//{
-	//  std::cout << "Error reading from Camera" << e << std::endl;
-	//}
-	
-	
+    //robot control
+    try {
+
+        const auto ldata = laser_proxy->getLaserData();
+        const int part = 3;
+
+        RoboCompLaser::TLaserData  copy;
+        copy.assign(ldata.begin()+ldata.size()/part, ldata.end()-ldata.size()/part);
+        std::ranges::sort(copy, {},&RoboCompLaser::TData::dist);
+        qInfo() << copy.front().dist;
+//        for (const auto &l :ldata)
+//            qInfo() << l.angle << l.dist;
+//
+//        qInfo() << "--------------";
+    }
+    catch (const Ice::Exception &e) {std::cout << e.what() << std::endl; }
+    //el robot pienso lo que va hacer
+
+    //ordenar por disctancia la seccion central del laser
+    //si el primero es menos que un umbral parar y girar random hasta qwue el primero sea mayor que el segundo
+
+    //robot actua
+    try
+    {
+        float addv = 600;
+        float rot = 0.5;
+        differentialrobot_proxy->setSpeedBase(addv,rot);
+
+    }
+    catch (const Ice::Exception &e) {std::cout << e.what() << std::endl; }
+
+
 }
 
 int SpecificWorker::startup_check()
 {
-	std::cout << "Startup check" << std::endl;
-	QTimer::singleShot(200, qApp, SLOT(quit()));
-	return 0;
+    std::cout << "Startup check" << std::endl;
+    QTimer::singleShot(200, qApp, SLOT(quit()));
+    return 0;
 }
 
 
@@ -126,4 +144,3 @@ int SpecificWorker::startup_check()
 // From the RoboCompLaser you can use this types:
 // RoboCompLaser::LaserConfData
 // RoboCompLaser::TData
-
