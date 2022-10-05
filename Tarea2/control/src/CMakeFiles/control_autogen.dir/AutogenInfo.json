@@ -7,8 +7,8 @@
 	"CMAKE_LIST_FILES" : 
 	[
 		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/CMakeLists.txt",
-		"/opt/robocomp/cmake/robocomp.cmake",
-		"/opt/robocomp/cmake/modules/qt.cmake",
+		"/home/alumno/robocomp/cmake/robocomp.cmake",
+		"/home/alumno/robocomp/cmake/modules/qt.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
@@ -94,6 +94,24 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/alumno/robocomp/classes/qlog/qlog.h",
+			"MU",
+			"DVFBV33MU7/moc_qlog.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/classes/rapplication/rapplication.h",
+			"MU",
+			"GKJOXEN2T4/moc_rapplication.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/classes/sigwatch/sigwatch.h",
+			"MU",
+			"Z2MVH3G4AO/moc_sigwatch.cpp",
+			null
+		],
+		[
 			"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/commonbehaviorI.h",
 			"MU",
 			"EWIEGA46WW/moc_commonbehaviorI.cpp",
@@ -121,24 +139,6 @@
 			"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/specificworker.h",
 			"MU",
 			"EWIEGA46WW/moc_specificworker.cpp",
-			null
-		],
-		[
-			"/opt/robocomp/classes/qlog/qlog.h",
-			"MU",
-			"2FGXPJ7LXO/moc_qlog.cpp",
-			null
-		],
-		[
-			"/opt/robocomp/classes/rapplication/rapplication.h",
-			"MU",
-			"QJTTXZVCVU/moc_rapplication.cpp",
-			null
-		],
-		[
-			"/opt/robocomp/classes/sigwatch/sigwatch.h",
-			"MU",
-			"A42NFNQRPH/moc_sigwatch.cpp",
 			null
 		]
 	],
@@ -172,9 +172,9 @@
 		"/opt/robocomp/include",
 		"/classes",
 		"/home/alumno/robocomp/components/Robotica/Tarea2/control",
-		"/opt/robocomp/classes",
-		"/opt/robocomp/libs",
-		"/opt/robocomp/interfaces",
+		"/home/alumno/robocomp/classes",
+		"/home/alumno/robocomp/libs",
+		"/home/alumno/robocomp/interfaces",
 		"/include",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
@@ -210,9 +210,9 @@
 	"MOC_SKIP" : 
 	[
 		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/CommonBehavior.cpp",
-		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobot.cpp",
+		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.cpp",
 		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/GenericBase.cpp",
-		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/Laser.cpp",
+		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.cpp",
 		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/ui_mainUI.h"
 	],
 	"MULTI_CONFIG" : false,
@@ -225,6 +225,13 @@
 	"SETTINGS_FILE" : "/home/alumno/robocomp/components/Robotica/Tarea2/control/src/CMakeFiles/control_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/alumno/robocomp/classes/qlog/qlog.cpp", "MU", null ],
+		[
+			"/home/alumno/robocomp/classes/rapplication/rapplication.cpp",
+			"MU",
+			null
+		],
+		[ "/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp", "MU", null ],
 		[
 			"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/commonbehaviorI.cpp",
 			"MU",
@@ -254,19 +261,16 @@
 			"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/specificworker.cpp",
 			"MU",
 			null
-		],
-		[ "/opt/robocomp/classes/qlog/qlog.cpp", "MU", null ],
-		[ "/opt/robocomp/classes/rapplication/rapplication.cpp", "MU", null ],
-		[ "/opt/robocomp/classes/sigwatch/sigwatch.cpp", "MU", null ]
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
 		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/CommonBehavior.cpp",
-		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobot.cpp",
+		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.cpp",
 		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/GenericBase.cpp",
-		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/Laser.cpp",
+		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.cpp",
 		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/mainUI.ui",
 		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/ui_mainUI.h"
 	],

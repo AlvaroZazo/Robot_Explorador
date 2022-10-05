@@ -308,7 +308,7 @@ src/CMakeFiles/control.dir/commonbehaviorI.cpp.o: \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
- /opt/robocomp/classes/qlog/qlog.h \
+ /home/alumno/robocomp/classes/qlog/qlog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
@@ -1033,7 +1033,7 @@ src/CMakeFiles/control.dir/commonbehaviorI.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobot.h \
+ /home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/Laser.h \
+ /home/alumno/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericmonitor.h

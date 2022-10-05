@@ -1,7 +1,7 @@
 # Hashes of file build rules.
 9115d7a47067eb4869a58e952d82b287 src/CMakeFiles/control_autogen
 8bdbe6d799ae2429bb96a40c8b273cd6 src/CommonBehavior.cpp
-d274a12615e43a1a73d198f45e21474d src/DifferentialRobot.cpp
+3c8fffcc676d63673ee449bfc373e01f src/DifferentialRobotMulti.cpp
 0e14a9af02bda4e78310c39024a992c7 src/GenericBase.cpp
-23b4363080a5e4ed5dc4ebd19672bcc2 src/Laser.cpp
+f1be7fea1f235f87ee53945a94508d74 src/LaserMulti.cpp
 88218899d5275d230b3bf17f1ab79cef src/ui_mainUI.h

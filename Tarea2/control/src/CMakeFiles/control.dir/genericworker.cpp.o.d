@@ -18,7 +18,7 @@ src/CMakeFiles/control.dir/genericworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /opt/robocomp/classes/qlog/qlog.h \
+ /home/alumno/robocomp/classes/qlog/qlog.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
@@ -1007,6 +1007,6 @@ src/CMakeFiles/control.dir/genericworker.cpp.o: \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/Ice/FactoryTableInit.h \
  /usr/include/Ice/DefaultValueFactory.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobot.h \
+ /home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/Laser.h
+ /home/alumno/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.h

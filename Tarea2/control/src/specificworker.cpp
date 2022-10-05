@@ -76,15 +76,28 @@ void SpecificWorker::initialize(int period)
 void SpecificWorker::compute()
 {
     //robot control
+    float addv = 700;
+    float rot = 0.5;
     try {
 
-        const auto ldata = laser_proxy->getLaserData();
+        const auto ldata = lasermulti_proxy->getLaserData(1);
         const int part = 3;
 
-        RoboCompLaser::TLaserData  copy;
+        RoboCompLaserMulti::TLaserData  copy;
         copy.assign(ldata.begin()+ldata.size()/part, ldata.end()-ldata.size()/part);
-        std::ranges::sort(copy, {},&RoboCompLaser::TData::dist);
+        std::ranges::sort(copy, {},&RoboCompLaserMulti::TData::dist);
         qInfo() << copy.front().dist;
+        if(copy.front().dist < 500)
+        {
+            addv = 0;
+            rot = 0.7;
+            qInfo() << copy.front().dist;
+        }
+        else
+        {
+            addv = 600;
+            rot = 0;
+        }
 //        for (const auto &l :ldata)
 //            qInfo() << l.angle << l.dist;
 //
@@ -99,9 +112,9 @@ void SpecificWorker::compute()
     //robot actua
     try
     {
-        float addv = 600;
-        float rot = 0.5;
-        differentialrobot_proxy->setSpeedBase(addv,rot);
+        addv = 700;
+        rot = 0.5;
+        differentialrobotmulti_proxy->setSpeedBase(1,addv,rot);
 
     }
     catch (const Ice::Exception &e) {std::cout << e.what() << std::endl; }

@@ -1022,12 +1022,12 @@ src/CMakeFiles/control.dir/main.cpp.o: \
  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/Ice/UUID.h \
  /usr/include/IceUtil/UUID.h /usr/include/IceStorm/IceStorm.h \
  /usr/include/IceStorm/Metrics.h /usr/include/IceStorm/Config.h \
- /opt/robocomp/classes/rapplication/rapplication.h \
+ /home/alumno/robocomp/classes/rapplication/rapplication.h \
  /usr/include/IceUtil/IceUtil.h /usr/include/IceUtil/Functional.h \
  /usr/include/IceUtil/MutexPtrLock.h /usr/include/IceUtil/RecMutex.h \
- /opt/robocomp/classes/sigwatch/sigwatch.h \
+ /home/alumno/robocomp/classes/sigwatch/sigwatch.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
- /opt/robocomp/classes/qlog/qlog.h \
+ /home/alumno/robocomp/classes/qlog/qlog.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
  /usr/include/boost/format.hpp /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp /usr/include/boost/config.hpp \
@@ -1241,9 +1241,9 @@ src/CMakeFiles/control.dir/main.cpp.o: \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/CommonBehavior.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobot.h \
+ /home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/Laser.h \
+ /home/alumno/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/specificworker.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
  /usr/local/include/innermodel/innermodel.h \

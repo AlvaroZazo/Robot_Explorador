@@ -227,29 +227,29 @@ CommonBehavior.cpp.s:
 	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/CommonBehavior.cpp.s
 .PHONY : CommonBehavior.cpp.s
 
-DifferentialRobot.o: DifferentialRobot.cpp.o
-.PHONY : DifferentialRobot.o
+DifferentialRobotMulti.o: DifferentialRobotMulti.cpp.o
+.PHONY : DifferentialRobotMulti.o
 
 # target to build an object file
-DifferentialRobot.cpp.o:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/DifferentialRobot.cpp.o
-.PHONY : DifferentialRobot.cpp.o
+DifferentialRobotMulti.cpp.o:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/DifferentialRobotMulti.cpp.o
+.PHONY : DifferentialRobotMulti.cpp.o
 
-DifferentialRobot.i: DifferentialRobot.cpp.i
-.PHONY : DifferentialRobot.i
+DifferentialRobotMulti.i: DifferentialRobotMulti.cpp.i
+.PHONY : DifferentialRobotMulti.i
 
 # target to preprocess a source file
-DifferentialRobot.cpp.i:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/DifferentialRobot.cpp.i
-.PHONY : DifferentialRobot.cpp.i
+DifferentialRobotMulti.cpp.i:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/DifferentialRobotMulti.cpp.i
+.PHONY : DifferentialRobotMulti.cpp.i
 
-DifferentialRobot.s: DifferentialRobot.cpp.s
-.PHONY : DifferentialRobot.s
+DifferentialRobotMulti.s: DifferentialRobotMulti.cpp.s
+.PHONY : DifferentialRobotMulti.s
 
 # target to generate assembly for a file
-DifferentialRobot.cpp.s:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/DifferentialRobot.cpp.s
-.PHONY : DifferentialRobot.cpp.s
+DifferentialRobotMulti.cpp.s:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/DifferentialRobotMulti.cpp.s
+.PHONY : DifferentialRobotMulti.cpp.s
 
 GenericBase.o: GenericBase.cpp.o
 .PHONY : GenericBase.o
@@ -275,29 +275,29 @@ GenericBase.cpp.s:
 	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/GenericBase.cpp.s
 .PHONY : GenericBase.cpp.s
 
-Laser.o: Laser.cpp.o
-.PHONY : Laser.o
+LaserMulti.o: LaserMulti.cpp.o
+.PHONY : LaserMulti.o
 
 # target to build an object file
-Laser.cpp.o:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/Laser.cpp.o
-.PHONY : Laser.cpp.o
+LaserMulti.cpp.o:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/LaserMulti.cpp.o
+.PHONY : LaserMulti.cpp.o
 
-Laser.i: Laser.cpp.i
-.PHONY : Laser.i
+LaserMulti.i: LaserMulti.cpp.i
+.PHONY : LaserMulti.i
 
 # target to preprocess a source file
-Laser.cpp.i:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/Laser.cpp.i
-.PHONY : Laser.cpp.i
+LaserMulti.cpp.i:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/LaserMulti.cpp.i
+.PHONY : LaserMulti.cpp.i
 
-Laser.s: Laser.cpp.s
-.PHONY : Laser.s
+LaserMulti.s: LaserMulti.cpp.s
+.PHONY : LaserMulti.s
 
 # target to generate assembly for a file
-Laser.cpp.s:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/Laser.cpp.s
-.PHONY : Laser.cpp.s
+LaserMulti.cpp.s:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/LaserMulti.cpp.s
+.PHONY : LaserMulti.cpp.s
 
 commonbehaviorI.o: commonbehaviorI.cpp.o
 .PHONY : commonbehaviorI.o
@@ -395,6 +395,78 @@ genericworker.cpp.s:
 	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/genericworker.cpp.s
 .PHONY : genericworker.cpp.s
 
+home/alumno/robocomp/classes/qlog/qlog.o: home/alumno/robocomp/classes/qlog/qlog.cpp.o
+.PHONY : home/alumno/robocomp/classes/qlog/qlog.o
+
+# target to build an object file
+home/alumno/robocomp/classes/qlog/qlog.cpp.o:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.o
+.PHONY : home/alumno/robocomp/classes/qlog/qlog.cpp.o
+
+home/alumno/robocomp/classes/qlog/qlog.i: home/alumno/robocomp/classes/qlog/qlog.cpp.i
+.PHONY : home/alumno/robocomp/classes/qlog/qlog.i
+
+# target to preprocess a source file
+home/alumno/robocomp/classes/qlog/qlog.cpp.i:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.i
+.PHONY : home/alumno/robocomp/classes/qlog/qlog.cpp.i
+
+home/alumno/robocomp/classes/qlog/qlog.s: home/alumno/robocomp/classes/qlog/qlog.cpp.s
+.PHONY : home/alumno/robocomp/classes/qlog/qlog.s
+
+# target to generate assembly for a file
+home/alumno/robocomp/classes/qlog/qlog.cpp.s:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.s
+.PHONY : home/alumno/robocomp/classes/qlog/qlog.cpp.s
+
+home/alumno/robocomp/classes/rapplication/rapplication.o: home/alumno/robocomp/classes/rapplication/rapplication.cpp.o
+.PHONY : home/alumno/robocomp/classes/rapplication/rapplication.o
+
+# target to build an object file
+home/alumno/robocomp/classes/rapplication/rapplication.cpp.o:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.o
+.PHONY : home/alumno/robocomp/classes/rapplication/rapplication.cpp.o
+
+home/alumno/robocomp/classes/rapplication/rapplication.i: home/alumno/robocomp/classes/rapplication/rapplication.cpp.i
+.PHONY : home/alumno/robocomp/classes/rapplication/rapplication.i
+
+# target to preprocess a source file
+home/alumno/robocomp/classes/rapplication/rapplication.cpp.i:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.i
+.PHONY : home/alumno/robocomp/classes/rapplication/rapplication.cpp.i
+
+home/alumno/robocomp/classes/rapplication/rapplication.s: home/alumno/robocomp/classes/rapplication/rapplication.cpp.s
+.PHONY : home/alumno/robocomp/classes/rapplication/rapplication.s
+
+# target to generate assembly for a file
+home/alumno/robocomp/classes/rapplication/rapplication.cpp.s:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.s
+.PHONY : home/alumno/robocomp/classes/rapplication/rapplication.cpp.s
+
+home/alumno/robocomp/classes/sigwatch/sigwatch.o: home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o
+.PHONY : home/alumno/robocomp/classes/sigwatch/sigwatch.o
+
+# target to build an object file
+home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o
+.PHONY : home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o
+
+home/alumno/robocomp/classes/sigwatch/sigwatch.i: home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.i
+.PHONY : home/alumno/robocomp/classes/sigwatch/sigwatch.i
+
+# target to preprocess a source file
+home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.i:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.i
+.PHONY : home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.i
+
+home/alumno/robocomp/classes/sigwatch/sigwatch.s: home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.s
+.PHONY : home/alumno/robocomp/classes/sigwatch/sigwatch.s
+
+# target to generate assembly for a file
+home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.s:
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.s
+.PHONY : home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -418,78 +490,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-opt/robocomp/classes/qlog/qlog.o: opt/robocomp/classes/qlog/qlog.cpp.o
-.PHONY : opt/robocomp/classes/qlog/qlog.o
-
-# target to build an object file
-opt/robocomp/classes/qlog/qlog.cpp.o:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o
-.PHONY : opt/robocomp/classes/qlog/qlog.cpp.o
-
-opt/robocomp/classes/qlog/qlog.i: opt/robocomp/classes/qlog/qlog.cpp.i
-.PHONY : opt/robocomp/classes/qlog/qlog.i
-
-# target to preprocess a source file
-opt/robocomp/classes/qlog/qlog.cpp.i:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.i
-.PHONY : opt/robocomp/classes/qlog/qlog.cpp.i
-
-opt/robocomp/classes/qlog/qlog.s: opt/robocomp/classes/qlog/qlog.cpp.s
-.PHONY : opt/robocomp/classes/qlog/qlog.s
-
-# target to generate assembly for a file
-opt/robocomp/classes/qlog/qlog.cpp.s:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.s
-.PHONY : opt/robocomp/classes/qlog/qlog.cpp.s
-
-opt/robocomp/classes/rapplication/rapplication.o: opt/robocomp/classes/rapplication/rapplication.cpp.o
-.PHONY : opt/robocomp/classes/rapplication/rapplication.o
-
-# target to build an object file
-opt/robocomp/classes/rapplication/rapplication.cpp.o:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o
-.PHONY : opt/robocomp/classes/rapplication/rapplication.cpp.o
-
-opt/robocomp/classes/rapplication/rapplication.i: opt/robocomp/classes/rapplication/rapplication.cpp.i
-.PHONY : opt/robocomp/classes/rapplication/rapplication.i
-
-# target to preprocess a source file
-opt/robocomp/classes/rapplication/rapplication.cpp.i:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i
-.PHONY : opt/robocomp/classes/rapplication/rapplication.cpp.i
-
-opt/robocomp/classes/rapplication/rapplication.s: opt/robocomp/classes/rapplication/rapplication.cpp.s
-.PHONY : opt/robocomp/classes/rapplication/rapplication.s
-
-# target to generate assembly for a file
-opt/robocomp/classes/rapplication/rapplication.cpp.s:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s
-.PHONY : opt/robocomp/classes/rapplication/rapplication.cpp.s
-
-opt/robocomp/classes/sigwatch/sigwatch.o: opt/robocomp/classes/sigwatch/sigwatch.cpp.o
-.PHONY : opt/robocomp/classes/sigwatch/sigwatch.o
-
-# target to build an object file
-opt/robocomp/classes/sigwatch/sigwatch.cpp.o:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o
-.PHONY : opt/robocomp/classes/sigwatch/sigwatch.cpp.o
-
-opt/robocomp/classes/sigwatch/sigwatch.i: opt/robocomp/classes/sigwatch/sigwatch.cpp.i
-.PHONY : opt/robocomp/classes/sigwatch/sigwatch.i
-
-# target to preprocess a source file
-opt/robocomp/classes/sigwatch/sigwatch.cpp.i:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.i
-.PHONY : opt/robocomp/classes/sigwatch/sigwatch.cpp.i
-
-opt/robocomp/classes/sigwatch/sigwatch.s: opt/robocomp/classes/sigwatch/sigwatch.cpp.s
-.PHONY : opt/robocomp/classes/sigwatch/sigwatch.s
-
-# target to generate assembly for a file
-opt/robocomp/classes/sigwatch/sigwatch.cpp.s:
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control.dir/build.make src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.s
-.PHONY : opt/robocomp/classes/sigwatch/sigwatch.cpp.s
 
 specificmonitor.o: specificmonitor.cpp.o
 .PHONY : specificmonitor.o
@@ -557,15 +557,15 @@ help:
 	@echo "... CommonBehavior.o"
 	@echo "... CommonBehavior.i"
 	@echo "... CommonBehavior.s"
-	@echo "... DifferentialRobot.o"
-	@echo "... DifferentialRobot.i"
-	@echo "... DifferentialRobot.s"
+	@echo "... DifferentialRobotMulti.o"
+	@echo "... DifferentialRobotMulti.i"
+	@echo "... DifferentialRobotMulti.s"
 	@echo "... GenericBase.o"
 	@echo "... GenericBase.i"
 	@echo "... GenericBase.s"
-	@echo "... Laser.o"
-	@echo "... Laser.i"
-	@echo "... Laser.s"
+	@echo "... LaserMulti.o"
+	@echo "... LaserMulti.i"
+	@echo "... LaserMulti.s"
 	@echo "... commonbehaviorI.o"
 	@echo "... commonbehaviorI.i"
 	@echo "... commonbehaviorI.s"
@@ -578,18 +578,18 @@ help:
 	@echo "... genericworker.o"
 	@echo "... genericworker.i"
 	@echo "... genericworker.s"
+	@echo "... home/alumno/robocomp/classes/qlog/qlog.o"
+	@echo "... home/alumno/robocomp/classes/qlog/qlog.i"
+	@echo "... home/alumno/robocomp/classes/qlog/qlog.s"
+	@echo "... home/alumno/robocomp/classes/rapplication/rapplication.o"
+	@echo "... home/alumno/robocomp/classes/rapplication/rapplication.i"
+	@echo "... home/alumno/robocomp/classes/rapplication/rapplication.s"
+	@echo "... home/alumno/robocomp/classes/sigwatch/sigwatch.o"
+	@echo "... home/alumno/robocomp/classes/sigwatch/sigwatch.i"
+	@echo "... home/alumno/robocomp/classes/sigwatch/sigwatch.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... opt/robocomp/classes/qlog/qlog.o"
-	@echo "... opt/robocomp/classes/qlog/qlog.i"
-	@echo "... opt/robocomp/classes/qlog/qlog.s"
-	@echo "... opt/robocomp/classes/rapplication/rapplication.o"
-	@echo "... opt/robocomp/classes/rapplication/rapplication.i"
-	@echo "... opt/robocomp/classes/rapplication/rapplication.s"
-	@echo "... opt/robocomp/classes/sigwatch/sigwatch.o"
-	@echo "... opt/robocomp/classes/sigwatch/sigwatch.i"
-	@echo "... opt/robocomp/classes/sigwatch/sigwatch.s"
 	@echo "... specificmonitor.o"
 	@echo "... specificmonitor.i"
 	@echo "... specificmonitor.s"
