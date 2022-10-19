@@ -308,7 +308,7 @@ src/CMakeFiles/control.dir/commonbehaviorI.cpp.o: \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
- /home/alumno/robocomp/classes/qlog/qlog.h \
+ /opt/robocomp/classes/qlog/qlog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \

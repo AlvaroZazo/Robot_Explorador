@@ -21,6 +21,10 @@
 /**
 * \brief Default constructor
 */
+
+enum class State {IDLE, FORWARD, TURN, FOLLOW_WALL, SPIRAL};
+int MAX_ADV_SPEED=1000;
+
 SpecificWorker::SpecificWorker(TuplePrx tprx, bool startup_check) : GenericWorker(tprx)
 {
     this->startup_check_flag = startup_check;
@@ -40,21 +44,6 @@ SpecificWorker::~SpecificWorker()
 
 bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 {
-//	THE FOLLOWING IS JUST AN EXAMPLE
-//	To use innerModelPath parameter you should uncomment specificmonitor.cpp readConfig method content
-//	try
-//	{
-//		RoboCompCommonBehavior::Parameter par = params.at("InnerModelPath");
-//		std::string innermodel_path = par.value;
-//		innerModel = std::make_shared(innermodel_path);
-//	}
-//	catch(const std::exception &e) { qFatal("Error reading config params"); }
-
-
-
-
-
-
     return true;
 }
 
@@ -70,55 +59,63 @@ void SpecificWorker::initialize(int period)
     {
         timer.start(Period);
     }
-
 }
 
 void SpecificWorker::compute()
 {
-    //robot control
-    float addv = 700;
-    float rot = 0.5;
-    try {
-
-        const auto ldata = lasermulti_proxy->getLaserData(1);
-        const int part = 3;
-
-        RoboCompLaserMulti::TLaserData  copy;
-        copy.assign(ldata.begin()+ldata.size()/part, ldata.end()-ldata.size()/part);
-        std::ranges::sort(copy, {},&RoboCompLaserMulti::TData::dist);
-        qInfo() << copy.front().dist;
-        if(copy.front().dist < 500)
-        {
-            addv = 0;
-            rot = 0.7;
-            qInfo() << copy.front().dist;
-        }
-        else
-        {
-            addv = 600;
-            rot = 0;
-        }
-//        for (const auto &l :ldata)
-//            qInfo() << l.angle << l.dist;
-//
-//        qInfo() << "--------------";
-    }
-    catch (const Ice::Exception &e) {std::cout << e.what() << std::endl; }
-    //el robot pienso lo que va hacer
-
-    //ordenar por disctancia la seccion central del laser
-    //si el primero es menos que un umbral parar y girar random hasta qwue el primero sea mayor que el segundo
-
-    //robot actua
+    RoboCompLaserMulti::TLaserData ldata;
     try
+    { ldata = lasermulti_proxy->getLaserData(1);}
+    catch (const Ice::Exception &e) {std::cout << e.what() << std::endl; return;}
+
+//    const int part = 3;
+//
+//    RoboCompLaserMulti::TLaserData  copy;
+//    copy.assign(ldata.begin()+ldata.size()/part, ldata.end()-ldata.size()/part);
+//    std::ranges::sort(copy, {},&RoboCompLaserMulti::TData::dist);
+//    qInfo() << copy.front().dist;
+//    if(copy.front().dist < 500)
+//    {
+//        state = State::TURN;
+//       // addv = 700;
+//       // rot = 0.7;
+//       //qInfo() << copy.front().dist;
+//    }
+//    else
+//    {
+//        addv = 600;
+//        rot = 0;
+//    }
+////        for (const auto &l :ldata)
+////            qInfo() << l.angle << l.dist;
+////
+////        qInfo() << "--------------";
+//}
+    //Guardamos en la tupla el movimiento que queremos que realice.
+    std::tuple<State, float, float> result;    //State -> enum class
+
+    //Decidimos en funcion del valor guardado en la tupla, el movimiento que debe hacer.
+    switch(std::get<State>(result))
     {
-        addv = 700;
-        rot = 0.5;
-        differentialrobotmulti_proxy->setSpeedBase(1,addv,rot);
+        case State::IDLE:
 
+            break;
+        case State::FORWARD:
+            result = FORWARD_method(ldata);
+            break;
+        case State::TURN:
+            break;
+        case State::WALL:
+            break;
+        case State::SPIRAL:
+            break;
     }
-    catch (const Ice::Exception &e) {std::cout << e.what() << std::endl; }
 
+    //Bloque para enviar las velocidades al robot.
+    auto &[_, adv, rot]  = result;
+    try
+    { differentialrobotmulti_proxy->setSpeedBase(1,adv,rot);}
+    catch (const Ice::Exception &e) {std::cout << e.what() << std::endl; }
 
 }
 
@@ -130,6 +127,66 @@ int SpecificWorker::startup_check()
 }
 
 
+//-------------------------
+//METODOS IMPLEMENTADOS
+//-------------------------
+SpecificWorker::Action SpecificWorker::FORWARD_method(const RoboCompLaserMulti::TLaserData &ldata)
+{
+    std::tuple<SpecificWorker::State, float, float> result;
+    const int part = 3;
+    int binario = std::rand()%2;
+
+    RoboCompLaserMulti::TLaserData  copy;
+    copy.assign(ldata.begin()+ldata.size()/part, ldata.end()-ldata.size()/part);
+    std::ranges::sort(copy, {},&RoboCompLaserMulti::TData::dist);
+    qInfo() << copy.front().dist;
+    if(copy.front().dist < 200)
+    {
+        std::get<0>(result) = State::TURN;
+        std::get<1>(result) = 0;
+        if(binario==0)
+            std::get<2>(result) = 0.5;
+        else
+            std::get<2>(result) = -0.5;
+    } else if(copy.front().dist>1000){
+        std::get<0>(result) = State::SPIRAL;
+        std::get<1>(result) = 0;
+        //std::get<2>(result) =formula espiral;
+    } else {
+        std::get<0>(result) = State::IDLE;
+        std::get<1>(result) = MAX_ADV_SPEED;
+        std::get<2>(result) = 0;
+    }
+    return result;
+}
+
+
+SpecificWorker::Action SpecificWorker::TURN_method(const RoboCompLaserMulti::TLaserData &ldata)
+{
+    std::tuple<SpecificWorker::State, float, float> result;
+    const int part = 3;
+    int binario = std::rand()%2;
+
+    RoboCompLaserMulti::TLaserData  copy;
+    copy.assign(ldata.begin()+ldata.size()/part, ldata.end()-ldata.size()/part);
+    std::ranges::sort(copy, {},&RoboCompLaserMulti::TData::dist);
+    qInfo() << copy.front().dist;
+    if(copy.front().dist < 200)//SPACEAHEAD
+    {
+        std::get<0>(result) = State::TURN;
+        std::get<1>(result) = 0;
+        std::get<2>(result) = binario;
+    } else if(copy.front().dist>1000){
+        std::get<0>(result) = State::SPIRAL;
+        std::get<1>(result) = 0;
+        //std::get<2>(result) =formula espiral;
+    } else {
+        std::get<0>(result) = State::IDLE;
+        std::get<1>(result) = MAX_ADV_SPEED;
+        std::get<2>(result) = 0;
+    }
+    return result;
+}
 
 
 /**************************************/

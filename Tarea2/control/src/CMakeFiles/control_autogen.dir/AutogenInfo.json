@@ -3,12 +3,12 @@
 	"CMAKE_BINARY_DIR" : "/home/alumno/robocomp/components/Robotica/Tarea2/control",
 	"CMAKE_CURRENT_BINARY_DIR" : "/home/alumno/robocomp/components/Robotica/Tarea2/control/src",
 	"CMAKE_CURRENT_SOURCE_DIR" : "/home/alumno/robocomp/components/Robotica/Tarea2/control/src",
-	"CMAKE_EXECUTABLE" : "/snap/clion/206/bin/cmake/linux/bin/cmake",
+	"CMAKE_EXECUTABLE" : "/snap/clion/209/bin/cmake/linux/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
 		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/CMakeLists.txt",
-		"/home/alumno/robocomp/cmake/robocomp.cmake",
-		"/home/alumno/robocomp/cmake/modules/qt.cmake",
+		"/opt/robocomp/cmake/robocomp.cmake",
+		"/opt/robocomp/cmake/modules/qt.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
@@ -17,7 +17,7 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseArguments.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseArguments.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
@@ -52,7 +52,7 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseArguments.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseArguments.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfig.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
@@ -69,48 +69,30 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake",
 		"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/CMakeListsSpecific.txt",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindIce.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindThreads.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CheckLibraryExists.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CheckIncludeFile.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindIce.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindIce.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindThreads.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CheckLibraryExists.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CheckIncludeFile.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindIce.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake",
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/alumno/robocomp/components/Robotica/Tarea2/control",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
-		[
-			"/home/alumno/robocomp/classes/qlog/qlog.h",
-			"MU",
-			"DVFBV33MU7/moc_qlog.cpp",
-			null
-		],
-		[
-			"/home/alumno/robocomp/classes/rapplication/rapplication.h",
-			"MU",
-			"GKJOXEN2T4/moc_rapplication.cpp",
-			null
-		],
-		[
-			"/home/alumno/robocomp/classes/sigwatch/sigwatch.h",
-			"MU",
-			"Z2MVH3G4AO/moc_sigwatch.cpp",
-			null
-		],
 		[
 			"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/commonbehaviorI.h",
 			"MU",
@@ -139,6 +121,24 @@
 			"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/specificworker.h",
 			"MU",
 			"EWIEGA46WW/moc_specificworker.cpp",
+			null
+		],
+		[
+			"/opt/robocomp/classes/qlog/qlog.h",
+			"MU",
+			"2FGXPJ7LXO/moc_qlog.cpp",
+			null
+		],
+		[
+			"/opt/robocomp/classes/rapplication/rapplication.h",
+			"MU",
+			"QJTTXZVCVU/moc_rapplication.cpp",
+			null
+		],
+		[
+			"/opt/robocomp/classes/sigwatch/sigwatch.h",
+			"MU",
+			"A42NFNQRPH/moc_sigwatch.cpp",
 			null
 		]
 	],
@@ -172,9 +172,9 @@
 		"/opt/robocomp/include",
 		"/classes",
 		"/home/alumno/robocomp/components/Robotica/Tarea2/control",
-		"/home/alumno/robocomp/classes",
-		"/home/alumno/robocomp/libs",
-		"/home/alumno/robocomp/interfaces",
+		"/opt/robocomp/classes",
+		"/opt/robocomp/libs",
+		"/opt/robocomp/interfaces",
 		"/include",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
@@ -203,7 +203,7 @@
 		"-dM",
 		"-E",
 		"-c",
-		"/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp"
+		"/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp"
 	],
 	"MOC_PREDEFS_FILE" : "/home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
@@ -225,13 +225,6 @@
 	"SETTINGS_FILE" : "/home/alumno/robocomp/components/Robotica/Tarea2/control/src/CMakeFiles/control_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/alumno/robocomp/classes/qlog/qlog.cpp", "MU", null ],
-		[
-			"/home/alumno/robocomp/classes/rapplication/rapplication.cpp",
-			"MU",
-			null
-		],
-		[ "/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp", "MU", null ],
 		[
 			"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/commonbehaviorI.cpp",
 			"MU",
@@ -261,7 +254,10 @@
 			"/home/alumno/robocomp/components/Robotica/Tarea2/control/src/specificworker.cpp",
 			"MU",
 			null
-		]
+		],
+		[ "/opt/robocomp/classes/qlog/qlog.cpp", "MU", null ],
+		[ "/opt/robocomp/classes/rapplication/rapplication.cpp", "MU", null ],
+		[ "/opt/robocomp/classes/sigwatch/sigwatch.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

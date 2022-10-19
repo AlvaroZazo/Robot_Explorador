@@ -1,8 +1,13 @@
 /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/moc_genericmonitor.cpp: /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericmonitor.h \
   /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/moc_predefs.h \
-  /home/alumno/robocomp/classes/qlog/qlog.h \
+  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/CommonBehavior.h \
+  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.h \
+  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
+  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.h \
   /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
   /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
+  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/ui_mainUI.h \
+  /opt/robocomp/classes/qlog/qlog.h \
   /usr/include/GL/gl.h \
   /usr/include/Ice/Application.h \
   /usr/include/Ice/AsyncResult.h \
@@ -414,6 +419,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QSizeF \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractanimation.h \
@@ -726,6 +732,13 @@
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/syscall.h \

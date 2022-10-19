@@ -9,7 +9,7 @@
 		],
 		"files" : 
 		[
-			"/home/alumno/robocomp/cmake/robocomp.cmake",
+			"/opt/robocomp/cmake/robocomp.cmake",
 			"src/CMakeLists.txt"
 		],
 		"nodes" : 

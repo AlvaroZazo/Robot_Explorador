@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/206/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/209/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/206/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/209/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -143,47 +143,47 @@ src/CMakeFiles/control.dir/specificmonitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/specificmonitor.cpp.s"
 	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alumno/robocomp/components/Robotica/Tarea2/control/src/specificmonitor.cpp -o CMakeFiles/control.dir/specificmonitor.cpp.s
 
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/control.dir/flags.make
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.o: /home/alumno/robocomp/classes/rapplication/rapplication.cpp
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/control.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Robotica/Tarea2/control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.o"
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.o -MF CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.o.d -o CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.o -c /home/alumno/robocomp/classes/rapplication/rapplication.cpp
+src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/control.dir/flags.make
+src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o: /opt/robocomp/classes/rapplication/rapplication.cpp
+src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/control.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Robotica/Tarea2/control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o"
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o -MF CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.d -o CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o -c /opt/robocomp/classes/rapplication/rapplication.cpp
 
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.i"
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alumno/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.i
+src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i"
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i
 
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.s"
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alumno/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.s
+src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s"
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s
 
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o: src/CMakeFiles/control.dir/flags.make
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o: /home/alumno/robocomp/classes/sigwatch/sigwatch.cpp
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o: src/CMakeFiles/control.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Robotica/Tarea2/control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o"
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o -MF CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o.d -o CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o -c /home/alumno/robocomp/classes/sigwatch/sigwatch.cpp
+src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o: src/CMakeFiles/control.dir/flags.make
+src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o: /opt/robocomp/classes/sigwatch/sigwatch.cpp
+src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o: src/CMakeFiles/control.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Robotica/Tarea2/control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o"
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o -MF CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o.d -o CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o -c /opt/robocomp/classes/sigwatch/sigwatch.cpp
 
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.i"
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alumno/robocomp/classes/sigwatch/sigwatch.cpp > CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.i
+src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.i"
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/robocomp/classes/sigwatch/sigwatch.cpp > CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.i
 
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.s"
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alumno/robocomp/classes/sigwatch/sigwatch.cpp -o CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.s
+src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.s"
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/robocomp/classes/sigwatch/sigwatch.cpp -o CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.s
 
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/control.dir/flags.make
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.o: /home/alumno/robocomp/classes/qlog/qlog.cpp
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/control.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Robotica/Tarea2/control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.o"
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.o -MF CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.o.d -o CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.o -c /home/alumno/robocomp/classes/qlog/qlog.cpp
+src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/control.dir/flags.make
+src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o: /opt/robocomp/classes/qlog/qlog.cpp
+src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/control.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Robotica/Tarea2/control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o"
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o -MF CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o.d -o CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o -c /opt/robocomp/classes/qlog/qlog.cpp
 
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.i"
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alumno/robocomp/classes/qlog/qlog.cpp > CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.i
+src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.i"
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/robocomp/classes/qlog/qlog.cpp > CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.i
 
-src/CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.s"
-	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alumno/robocomp/classes/qlog/qlog.cpp -o CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.s
+src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.s"
+	cd /home/alumno/robocomp/components/Robotica/Tarea2/control/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/robocomp/classes/qlog/qlog.cpp -o CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.s
 
 src/CMakeFiles/control.dir/main.cpp.o: src/CMakeFiles/control.dir/flags.make
 src/CMakeFiles/control.dir/main.cpp.o: src/main.cpp
@@ -302,9 +302,9 @@ control_OBJECTS = \
 "CMakeFiles/control.dir/control_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/control.dir/specificworker.cpp.o" \
 "CMakeFiles/control.dir/specificmonitor.cpp.o" \
-"CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.o" \
-"CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o" \
-"CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.o" \
+"CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o" \
+"CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o" \
+"CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o" \
 "CMakeFiles/control.dir/main.cpp.o" \
 "CMakeFiles/control.dir/genericmonitor.cpp.o" \
 "CMakeFiles/control.dir/commonbehaviorI.cpp.o" \
@@ -320,9 +320,9 @@ control_EXTERNAL_OBJECTS =
 bin/control: src/CMakeFiles/control.dir/control_autogen/mocs_compilation.cpp.o
 bin/control: src/CMakeFiles/control.dir/specificworker.cpp.o
 bin/control: src/CMakeFiles/control.dir/specificmonitor.cpp.o
-bin/control: src/CMakeFiles/control.dir/home/alumno/robocomp/classes/rapplication/rapplication.cpp.o
-bin/control: src/CMakeFiles/control.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o
-bin/control: src/CMakeFiles/control.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.o
+bin/control: src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o
+bin/control: src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o
+bin/control: src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o
 bin/control: src/CMakeFiles/control.dir/main.cpp.o
 bin/control: src/CMakeFiles/control.dir/genericmonitor.cpp.o
 bin/control: src/CMakeFiles/control.dir/commonbehaviorI.cpp.o

@@ -61,14 +61,14 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "ICES__home_alumno_robocomp_components_Robotica_Tarea2_control_src::@145eef247bfb46b6828c",
-					"jsonFile" : "target-ICES__home_alumno_robocomp_components_Robotica_Tarea2_control_src-ac3049341f7f6041c762.json",
+					"jsonFile" : "target-ICES__home_alumno_robocomp_components_Robotica_Tarea2_control_src-e1ad45d40d8792cfe5cb.json",
 					"name" : "ICES__home_alumno_robocomp_components_Robotica_Tarea2_control_src",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "control::@145eef247bfb46b6828c",
-					"jsonFile" : "target-control-71c89f4f9aa1e5d62d7d.json",
+					"jsonFile" : "target-control-eb7c5cf9af60fb985496.json",
 					"name" : "control",
 					"projectIndex" : 0
 				},

@@ -628,7 +628,7 @@ src/CMakeFiles/control.dir/genericmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcoreversion.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
- /home/alumno/robocomp/classes/qlog/qlog.h \
+ /opt/robocomp/classes/qlog/qlog.h \
  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
  /usr/include/boost/format.hpp /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp /usr/include/boost/config.hpp \

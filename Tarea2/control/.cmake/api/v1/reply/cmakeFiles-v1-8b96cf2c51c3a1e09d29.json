@@ -10,7 +10,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake"
 		},
 		{
 			"path" : "CMakeFiles/3.23.2/CMakeCCompiler.cmake"
@@ -21,113 +21,113 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
 			"path" : "src/CMakeLists.txt"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/home/alumno/robocomp/cmake/robocomp.cmake"
+			"path" : "/opt/robocomp/cmake/robocomp.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/home/alumno/robocomp/cmake/modules/qt.cmake"
+			"path" : "/opt/robocomp/cmake/modules/qt.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -164,7 +164,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseArguments.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseArguments.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -305,7 +305,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseArguments.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseArguments.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -373,92 +373,92 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindIce.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindIce.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindThreads.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindThreads.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CheckLibraryExists.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CheckLibraryExists.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindIce.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindIce.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+			"path" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
