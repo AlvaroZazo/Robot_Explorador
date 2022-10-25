@@ -32,26 +32,29 @@
 
 class SpecificWorker : public GenericWorker
 {
-Q_OBJECT
+    Q_OBJECT
 public:
-	SpecificWorker(TuplePrx tprx, bool startup_check);
-	~SpecificWorker();
-	bool setParams(RoboCompCommonBehavior::ParameterList params);
+    SpecificWorker(TuplePrx tprx, bool startup_check);
+    ~SpecificWorker();
+    bool setParams(RoboCompCommonBehavior::ParameterList params);
 
-    public slots:
-        void compute();
-        int startup_check();
-        void initialize(int period);
+public slots:
+            void compute();
+    int startup_check();
+    void initialize(int period);
 
-    private:
+private:
 
-        bool startup_check_flag;
-        enum class State {IDLE, FORWARD, TURN, WALL, SPIRAL};
-        State state = State::IDLE;
+    bool startup_check_flag;
+    enum class State {IDLE, FORWARD, TURN, WALL, SPIRAL};
+    State state = State::IDLE;
 
-        using Action = std::tuple<State, float, float>;
-        Action FORWARD_method(const RoboCompLaserMulti::TLaserData &ldata);
-        Action TURN_method(const RoboCompLaserMulti::TLaserData &ldata);
+    using Action = std::tuple<State, float, float>;
+    Action IDLE_method(const RoboCompLaserMulti::TLaserData &ldata);
+    Action FORWARD_method(const RoboCompLaserMulti::TLaserData &ldata);
+    Action TURN_method(const RoboCompLaserMulti::TLaserData &ldata);
+    Action WALL_method(const RoboCompLaserMulti::TLaserData &ldata);
+    Action SPIRAL_method(const RoboCompLaserMulti::TLaserData &ldata);
 
 };
 
