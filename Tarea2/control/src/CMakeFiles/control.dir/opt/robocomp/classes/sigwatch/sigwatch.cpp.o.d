@@ -327,5 +327,5 @@ src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/include/moc_sigwatch.cpp \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/include/../../../../../../../../../../opt/robocomp/classes/sigwatch/sigwatch.h
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/include/moc_sigwatch.cpp \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/include/../../../../../../../../../../opt/robocomp/classes/sigwatch/sigwatch.h

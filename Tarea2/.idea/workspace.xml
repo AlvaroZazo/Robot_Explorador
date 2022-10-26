@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="control" targetName="ICES__home_robocomp_robocomp_components_Robotica_Tarea2_control_src" />
+      <config projectName="control" targetName="control" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2425cadc-106e-4fb6-898c-1c4c9f8af81a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/control/.cmake/api/v1/reply/cache-v2-afb83fadd48534c01220.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/.cmake/api/v1/reply/cmakeFiles-v1-8b96cf2c51c3a1e09d29.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/.cmake/api/v1/reply/codemodel-v2-afc1825dd7e0f8fbf68e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/.cmake/api/v1/reply/directory-.-0b3e05491b05af35351f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/.cmake/api/v1/reply/directory-src-35ef2e886a5fee022d79.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/.cmake/api/v1/reply/index-2022-10-19T15-11-38-0264.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/.cmake/api/v1/reply/target-ICES__home_alumno_robocomp_components_Robotica_Tarea2_control_src-e1ad45d40d8792cfe5cb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/.cmake/api/v1/reply/target-control-eb7c5cf9af60fb985496.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/.cmake/api/v1/reply/target-control_autogen-8ab9e4d28c8fb6bc3fdb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/.cmake/api/v1/reply/toolchains-v1-d06480eadcc461d85546.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.22.1/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.22.1/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.22.1/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.22.1/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CompilerIdC/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CompilerIdCXX/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/3.23.2/CompilerIdCXX/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/Progress/12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/Progress/21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/Progress/6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/Progress/7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/control/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/control/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/control/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/bin/control" beforeDir="false" afterPath="$PROJECT_DIR$/control/bin/control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/control/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/etc/config" beforeDir="false" afterPath="$PROJECT_DIR$/control/etc/config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/etc/config.new" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/CommonBehavior.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/CommonBehavior.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/CommonBehavior.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/CommonBehavior.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/DifferentialRobotMulti.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/DifferentialRobotMulti.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/DifferentialRobotMulti.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/DifferentialRobotMulti.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/GenericBase.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/GenericBase.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/GenericBase.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/GenericBase.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/LaserMulti.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/LaserMulti.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/LaserMulti.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/LaserMulti.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/commonbehaviorI.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/commonbehaviorI.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/commonbehaviorI.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/commonbehaviorI.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/compiler_depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/control_autogen/mocs_compilation.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/control_autogen/mocs_compilation.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/control_autogen/mocs_compilation.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/control_autogen/mocs_compilation.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/genericmonitor.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/genericmonitor.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/genericmonitor.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/genericmonitor.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/genericworker.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/genericworker.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/genericworker.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/genericworker.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/main.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/main.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/opt/robocomp/classes/qlog/qlog.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/specificmonitor.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/specificmonitor.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/specificmonitor.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/specificmonitor.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/specificworker.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/specificworker.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/specificworker.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control.dir/specificworker.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control_autogen.dir/AutogenInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control_autogen.dir/AutogenInfo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control_autogen.dir/AutogenUsed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control_autogen.dir/AutogenUsed.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control_autogen.dir/ParseCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/CMakeFiles/control_autogen.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/CMakeFiles/control_autogen.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/control_autogen/EWIEGA46WW/moc_genericmonitor.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/control_autogen/EWIEGA46WW/moc_genericmonitor.cpp.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/control_autogen/EWIEGA46WW/moc_genericworker.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/control_autogen/EWIEGA46WW/moc_genericworker.cpp.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/control_autogen/EWIEGA46WW/moc_specificmonitor.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/control_autogen/EWIEGA46WW/moc_specificmonitor.cpp.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/control_autogen/EWIEGA46WW/moc_specificworker.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/control_autogen/EWIEGA46WW/moc_specificworker.cpp.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/control_autogen/include/moc_sigwatch.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/control_autogen/include/moc_sigwatch.cpp.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/control_autogen/moc_predefs.h" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/control_autogen/moc_predefs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/specificworker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/specificworker.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/src/specificworker.h" beforeDir="false" afterPath="$PROJECT_DIR$/control/src/specificworker.h" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="clangTidyViaClangd" value="false" />
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FiieZ8r0wleB3thT9fA36dPvhi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/robocomp/robocomp/components/Robotica/Tarea2",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RunManager" selected="CMake Application.control">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ICES__home_robocomp_robocomp_components_Robotica_Tarea2_control_src" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="control" TARGET_NAME="ICES__home_robocomp_robocomp_components_Robotica_Tarea2_control_src" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="control" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="control" TARGET_NAME="control" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="control" RUN_TARGET_NAME="control">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.control" />
+      <item itemvalue="CMake Application.ICES__home_robocomp_robocomp_components_Robotica_Tarea2_control_src" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2425cadc-106e-4fb6-898c-1c4c9f8af81a" name="Changes" comment="" />
+      <created>1664981400877</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664981400877</updated>
+      <workItem from="1664981402039" duration="2081000" />
+      <workItem from="1665415466210" duration="655000" />
+      <workItem from="1665497565692" duration="409000" />
+      <workItem from="1665497983628" duration="156000" />
+      <workItem from="1665498148340" duration="9000" />
+      <workItem from="1665498207801" duration="23000" />
+      <workItem from="1666102781819" duration="1728000" />
+      <workItem from="1666105853929" duration="1639000" />
+      <workItem from="1666187486856" duration="913000" />
+      <workItem from="1666683725128" duration="45000" />
+      <workItem from="1666706111074" duration="7021000" />
+      <workItem from="1666714667447" duration="3467000" />
+      <workItem from="1666719175355" duration="5764000" />
+      <workItem from="1666776872912" duration="6566000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

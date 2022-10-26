@@ -1,7 +1,7 @@
 src/CMakeFiles/control.dir/GenericBase.cpp.o: \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/GenericBase.cpp \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/GenericBase.cpp \
  /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
@@ -71,8 +71,9 @@ src/CMakeFiles/control.dir/GenericBase.cpp.o: \
  /usr/include/c++/11/bits/exception_defines.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/hash_bytes.h \
- /usr/include/c++/11/new /usr/include/c++/11/bits/nested_exception.h \
- /usr/include/c++/11/bits/move.h /usr/include/c++/11/type_traits \
+ /usr/include/c++/11/new /usr/include/c++/11/bits/move.h \
+ /usr/include/c++/11/type_traits \
+ /usr/include/c++/11/bits/nested_exception.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \

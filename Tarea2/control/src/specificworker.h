@@ -58,6 +58,7 @@ private:
     Action TURN_method(const RoboCompLaserMulti::TLaserData &ldata);
     Action WALL_method(const RoboCompLaserMulti::TLaserData &ldata);
     Action SPIRAL_method(const RoboCompLaserMulti::TLaserData &ldata);
+    Action TURN_PROC_method(float laserLeft, float laserRight);
     std::tuple<State, float, float> result;    //State -> enum class
 };
 

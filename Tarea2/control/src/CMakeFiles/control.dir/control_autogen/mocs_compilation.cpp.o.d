@@ -1,7 +1,7 @@
 src/CMakeFiles/control.dir/control_autogen/mocs_compilation.cpp.o: \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/mocs_compilation.cpp \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/moc_genericmonitor.cpp \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/moc_genericmonitor.cpp \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -199,7 +199,7 @@ src/CMakeFiles/control.dir/control_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../genericmonitor.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../genericmonitor.h \
  /usr/include/Ice/Ice.h /usr/include/IceUtil/PushDisableWarnings.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cassert \
@@ -626,10 +626,10 @@ src/CMakeFiles/control.dir/control_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcoreversion.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../genericworker.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../config.h \
- /home/alumno/robocomp/classes/qlog/qlog.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../genericworker.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../config.h \
+ /opt/robocomp/classes/qlog/qlog.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/config.h \
  /usr/include/boost/format.hpp /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
@@ -1022,7 +1022,7 @@ src/CMakeFiles/control.dir/control_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/ui_mainUI.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
@@ -1032,18 +1032,18 @@ src/CMakeFiles/control.dir/control_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/CommonBehavior.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/moc_genericworker.cpp \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../genericworker.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/moc_specificmonitor.cpp \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../specificmonitor.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../genericmonitor.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/moc_specificworker.cpp \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../specificworker.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/CommonBehavior.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/moc_genericworker.cpp \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../genericworker.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/moc_specificmonitor.cpp \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../specificmonitor.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../genericmonitor.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/moc_specificworker.cpp \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/../../specificworker.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
  /usr/local/include/innermodel/innermodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QHash \
  /usr/local/include/qmat/qmat.h /usr/include/gsl/gsl_math.h \

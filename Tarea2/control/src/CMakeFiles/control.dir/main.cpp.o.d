@@ -1,5 +1,5 @@
 src/CMakeFiles/control.dir/main.cpp.o: \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/main.cpp \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/signal.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -1022,13 +1022,13 @@ src/CMakeFiles/control.dir/main.cpp.o: \
  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/Ice/UUID.h \
  /usr/include/IceUtil/UUID.h /usr/include/IceStorm/IceStorm.h \
  /usr/include/IceStorm/Metrics.h /usr/include/IceStorm/Config.h \
- /home/alumno/robocomp/classes/rapplication/rapplication.h \
+ /opt/robocomp/classes/rapplication/rapplication.h \
  /usr/include/IceUtil/IceUtil.h /usr/include/IceUtil/Functional.h \
  /usr/include/IceUtil/MutexPtrLock.h /usr/include/IceUtil/RecMutex.h \
- /home/alumno/robocomp/classes/sigwatch/sigwatch.h \
+ /opt/robocomp/classes/sigwatch/sigwatch.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
- /home/alumno/robocomp/classes/qlog/qlog.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
+ /opt/robocomp/classes/qlog/qlog.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/config.h \
  /usr/include/boost/format.hpp /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
@@ -1234,18 +1234,18 @@ src/CMakeFiles/control.dir/main.cpp.o: \
  /usr/include/boost/format/parsing.hpp \
  /usr/include/boost/format/free_funcs.hpp \
  /usr/include/boost/format/detail/unset_macros.hpp \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericmonitor.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/config.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/genericmonitor.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/ui_mainUI.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/CommonBehavior.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/specificworker.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/CommonBehavior.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/specificworker.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
  /usr/local/include/innermodel/innermodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QHash \
  /usr/local/include/qmat/qmat.h /usr/include/gsl/gsl_math.h \
@@ -1386,5 +1386,5 @@ src/CMakeFiles/control.dir/main.cpp.o: \
  /usr/local/include/innermodel/innermodelimu.h \
  /usr/local/include/innermodel/innermodelpointcloud.h \
  /usr/local/include/innermodel/innermodeldisplay.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/specificmonitor.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/commonbehaviorI.h
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/specificmonitor.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/commonbehaviorI.h

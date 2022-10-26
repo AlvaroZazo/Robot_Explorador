@@ -1,8 +1,8 @@
 src/CMakeFiles/control.dir/specificmonitor.cpp.o: \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/specificmonitor.cpp \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/specificmonitor.cpp \
  /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/specificmonitor.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericmonitor.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/specificmonitor.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/genericmonitor.h \
  /usr/include/Ice/Ice.h /usr/include/IceUtil/PushDisableWarnings.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
@@ -72,8 +72,9 @@ src/CMakeFiles/control.dir/specificmonitor.cpp.o: \
  /usr/include/c++/11/bits/exception_defines.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/hash_bytes.h \
- /usr/include/c++/11/new /usr/include/c++/11/bits/nested_exception.h \
- /usr/include/c++/11/bits/move.h /usr/include/c++/11/type_traits \
+ /usr/include/c++/11/new /usr/include/c++/11/bits/move.h \
+ /usr/include/c++/11/type_traits \
+ /usr/include/c++/11/bits/nested_exception.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
@@ -627,10 +628,10 @@ src/CMakeFiles/control.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcoreversion.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/config.h \
  /opt/robocomp/classes/qlog/qlog.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/config.h \
  /usr/include/boost/format.hpp /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
@@ -1023,7 +1024,7 @@ src/CMakeFiles/control.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/ui_mainUI.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
@@ -1033,7 +1034,7 @@ src/CMakeFiles/control.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/CommonBehavior.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
- /home/alumno/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.h
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/CommonBehavior.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
+ /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.h
