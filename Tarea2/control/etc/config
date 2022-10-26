@@ -1,9 +1,8 @@
 CommonBehavior.Endpoints=tcp -p 10000
 
 # Proxies for required interfaces
-DifferentialRobotMultiProxy = differentialrobotmulti:tcp -h 172.16.0.163 -p 10007
-LaserMultiProxy = lasermulti:tcp -h 172.16.0.163 -p 10008
-
+DifferentialRobotMultiProxy = differentialrobotmulti:tcp -h isbe-05.local -p 10007
+LaserMultiProxy = lasermulti:tcp -h isbe-05.local -p 10008
 
 
 InnerModelPath = innermodel.xml
@@ -12,3 +11,4 @@ Ice.Warn.Connections=0
 Ice.Trace.Network=0
 Ice.Trace.Protocol=0
 Ice.MessageSizeMax=20004800
+

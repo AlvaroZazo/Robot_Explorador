@@ -1,11 +1,11 @@
 /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/genericworker.h \
   /home/robocomp/robocomp/components/Robotica/Tarea2/control/src/control_autogen/moc_predefs.h \
-  /home/zazo/robocomp/components/Robotica/Tarea2/control/src/CommonBehavior.h \
-  /home/zazo/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.h \
-  /home/zazo/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
-  /home/zazo/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.h \
-  /home/zazo/robocomp/components/Robotica/Tarea2/control/src/config.h \
-  /home/zazo/robocomp/components/Robotica/Tarea2/control/src/ui_mainUI.h \
+  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/CommonBehavior.h \
+  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/DifferentialRobotMulti.h \
+  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/GenericBase.h \
+  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/LaserMulti.h \
+  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/config.h \
+  /home/alumno/robocomp/components/Robotica/Tarea2/control/src/ui_mainUI.h \
   /opt/robocomp/classes/qlog/qlog.h \
   /usr/include/GL/gl.h \
   /usr/include/Ice/AsyncResult.h \
