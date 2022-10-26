@@ -23,7 +23,9 @@
 */
 
 enum class State {IDLE, FORWARD, TURN, FOLLOW_WALL, SPIRAL};
-int MAX_ADV_SPEED= 700;
+int MAX_ADV_SPEED= 600;
+float BREAKSPEED = - MAX_ADV_SPEED/3;
+float MAX_ROT_SPEED = 3.14;
 
 SpecificWorker::SpecificWorker(TuplePrx tprx, bool startup_check) : GenericWorker(tprx)
 {
@@ -55,10 +57,14 @@ void SpecificWorker::initialize(int period)
     this->Period = period;
     if(this->startup_check_flag)
     {
+
         this->startup_check();
     }
     else
     {
+        this->actualRotation = 0;
+        this->actualSpeed = 500;
+        this->result = std::make_tuple(State::IDLE,actualSpeed,actualRotation);
         timer.start(Period);
     }
 }
@@ -66,38 +72,42 @@ void SpecificWorker::initialize(int period)
 void SpecificWorker::compute()
 {
 
+
+
     RoboCompLaserMulti::TLaserData ldata;
     try
     { ldata = lasermulti_proxy->getLaserData(1);}
     catch (const Ice::Exception &e) {std::cout << e.what() << std::endl; return;}
 
-    //Guardamos en la tupla el movimiento que queremos que realice.
-    std::tuple<State, float, float> result;    //State -> enum class
+
 
     //Decidimos en funcion del valor guardado en la tupla, el movimiento que debe hacer.
+
+
     switch(std::get<State>(result))
     {
 
                case State::TURN:
+                   printf("entrando en turn");
                    result = TURN_method(ldata);
                    break;
-/*
+
                 case State::IDLE:
                    result = IDLE_method(ldata);
                   break;
+
                case State::FORWARD:
                    result = FORWARD_method(ldata);
                    break;
 
-               case State::WALL:
-                   result = WALL_method(ldata);
-                   break;
                case State::SPIRAL:
                    result = SPIRAL_method(ldata);
                    break;
-               */
-        default:                        //En caso de ser la primera llamada.
-            result = IDLE_method(ldata);
+
+        case State::WALL:
+                   result = SPIRAL_method(ldata);
+                   break;
+
     }
 
     //Bloque para enviar las velocidades al robot.
@@ -119,85 +129,47 @@ int SpecificWorker::startup_check()
 }
 
 
-//-----------------------------HECHO------------------------------//
-//----------------------------TOCHECK-----------------------------//
+
+                //----------------------------IDLE METHOD-----------------------------//
+
 SpecificWorker::Action SpecificWorker::IDLE_method(const RoboCompLaserMulti::TLaserData &ldata) {
     std::tuple<SpecificWorker::State, float, float> result;
     const int part = 3;
-
+    int binario = std::rand() % 2;
+    float rotation;
     //COPIA DE LOS VALORES DEL LASER
     RoboCompLaserMulti::TLaserData copy;
     copy.assign(ldata.begin() + ldata.size() / part, ldata.end() - ldata.size() / part);
     std::ranges::sort(copy, {}, &RoboCompLaserMulti::TData::dist);
     qInfo() << copy.front().dist;
 
-    //MODIFICACION PARA REALIZAR EL FORWARD (Modifico la tupla result)
-    std::get<1>(result) = 400;
+    if (copy.front().dist <= 500 + BREAKSPEED) {                            //--TURN CASE
+        if (binario == 0) {
+            rotation = MAX_ROT_SPEED;
 
+        } else  {
+            rotation = -MAX_ROT_SPEED;
+        }
+        return std::make_tuple(State::TURN, BREAKSPEED, rotation);
 
-    //COMPROBACIÓN DEL ESTADO ACTUAL DEL ROBOT (Se modifica el valor de la tupla State)
-    if (copy.front().dist <= 200) {                                           //CASO DISTANCIA REDUCIDA igual o menor 200 CAMBIA EL ESTADO A TURN.
-        std::get<0>(result) = State::TURN;
+    } else if(copy.front().dist > 1500){                                   //--SPIRAL CASE
 
-    } else if ((copy.front().dist > 200) && (copy.front().dist <= 500) ) {    // CASO DISTANCIA MAYOR A 200 Y MENOR 500 CAMBIA EL ESTADO A WALL.
-        std::get<0>(result) = State::WALL;
-
-    } else if ((copy.front().dist > 500) && (copy.front().dist <= 1000) ) {   // CASO DISTANCIA MAYOR A 200 Y MENOR 1000 CAMBIA EL ESTADO A FORWARD.
-        std::get<0>(result) = State::FORWARD; //No tendria efecto sobre el estado actual
-
-    } else if (copy.front().dist > 1000) {                                    //CASO DISTANCIA MAYOR 1000 CAMBIA EL ESTADO A SPIRAL.
-        std::get<0>(result) = State::SPIRAL;
-
-    } else {
-        std::get<0>(result) = State::IDLE;                                 //CASO OCIOSO DE NO ESTAR REFLEJADO.
-
+        return std::make_tuple(State::SPIRAL, 400 ,this->actualRotation + 0.7 );
     }
-    return result;
+    return std::make_tuple(State::FORWARD, MAX_ADV_SPEED, 0);          //--FORWARD CASE
+
+
 }
 
 
 
-//-----------------------------HECHO------------------------------//
-//----------------------------TOCHECK-----------------------------//
+
+            //----------------------------FORWARD METHOD-----------------------------//
+
 SpecificWorker::Action SpecificWorker::FORWARD_method(const RoboCompLaserMulti::TLaserData &ldata) {
-    std::tuple<SpecificWorker::State, float, float> result;
+    //std::tuple<SpecificWorker::State, float, float> result;
     const int part = 3;
-
-    //COPIA DE LOS VALORES DEL LASER
-    RoboCompLaserMulti::TLaserData copy;
-    copy.assign(ldata.begin() + ldata.size() / part, ldata.end() - ldata.size() / part);
-    std::ranges::sort(copy, {}, &RoboCompLaserMulti::TData::dist);
-    qInfo() << copy.front().dist;
-
-    //MODIFICACION PARA REALIZAR EL FORWARD (Modifico la tupla result)
-    std::get<1>(result) = MAX_ADV_SPEED;
-
-    //COMPROBACIÓN DEL ESTADO ACTUAL DEL ROBOT (Se modifica el valor de la tupla State)
-    if (copy.front().dist <= 200) {                                           //CASO DISTANCIA REDUCIDA igual o menor 200 CAMBIA EL ESTADO A TURN.
-        std::get<0>(result) = State::TURN;
-
-    } else if ((copy.front().dist > 200) && (copy.front().dist <= 500) ) {    // CASO DISTANCIA MAYOR A 200 Y MENOR 500 CAMBIA EL ESTADO A WALL.
-        std::get<0>(result) = State::WALL;
-
-    } else if ((copy.front().dist > 500) && (copy.front().dist <= 1000) ) {   // CASO DISTANCIA MAYOR A 200 Y MENOR 1000 CAMBIA EL ESTADO A FORWARD.
-        std::get<0>(result) = State::FORWARD; //No tendria efecto sobre el estado actual
-
-    } else if (copy.front().dist > 1000) {                                    //CASO DISTANCIA MAYOR 1000 CAMBIA EL ESTADO A SPIRAL.
-        std::get<0>(result) = State::SPIRAL;
-
-    } else {
-        std::get<0>(result) = State::IDLE;                                 //CASO OCIOSO DE NO ESTAR REFLEJADO.
-
-    }
-    return result;
-}
-
-//-----------------------------HECHO------------------------------//
-//----------------------------TOCHECK-----------------------------//
-SpecificWorker::Action SpecificWorker::TURN_method(const RoboCompLaserMulti::TLaserData &ldata)
-{
-    std::tuple<SpecificWorker::State, float, float> result;
-    const int part = 3;
+    float rotation;
     int binario = std::rand() % 2;
 
     //COPIA DE LOS VALORES DEL LASER
@@ -206,37 +178,88 @@ SpecificWorker::Action SpecificWorker::TURN_method(const RoboCompLaserMulti::TLa
     std::ranges::sort(copy, {}, &RoboCompLaserMulti::TData::dist);
     qInfo() << copy.front().dist;
 
-    //MODIFICACION PARA REALIZAR EL FORWARD (Modifico la tupla result)
-    //El robot gira 45 grados
-    std::get<1>(result) = 0;
-    if(binario == 0) {
-        std::get<2>(result) = M_PI/4; // (todo) Lo he puesto positivo de momento
-    }else{
-        std::get<2>(result) = M_PI/4;
+    //El robot se acerca demasiado a una pared.
+    if (copy.front().dist <= 500 + BREAKSPEED) {                             //--CASO TURN
+        if (binario == 0) {
+            rotation = MAX_ROT_SPEED;
+        }else {
+            rotation = -MAX_ROT_SPEED;
+        }
+        return std::make_tuple(State::TURN, BREAKSPEED, rotation);
+
+    }else if(copy.front().dist > 1500){                                     //--SPIRAL CASE
+        return std::make_tuple(State::SPIRAL, 400 ,this->actualRotation + 0.7 );
+}
+    return std::make_tuple(State::FORWARD, MAX_ADV_SPEED, 0);           //--FORWARD CASE
+}
+
+
+
+
+                //----------------------------TURN METHOD-----------------------------//
+
+SpecificWorker::Action SpecificWorker::TURN_method(const RoboCompLaserMulti::TLaserData &ldata) {
+    const int part = 3;
+    int binario = std::rand() % 2;
+    float rotation;
+
+
+    //COPIA DE LOS VALORES DEL LASER
+    RoboCompLaserMulti::TLaserData copy;
+    copy.assign(ldata.begin() + ldata.size() / part, ldata.end() - ldata.size() / part);
+    std::ranges::sort(copy, {}, &RoboCompLaserMulti::TData::dist);
+    qInfo() << copy.front().dist;
+
+
+    if(copy.front().dist > 1500){                                                   //--SPIRAL CASE
+        return std::make_tuple(State::SPIRAL, 400 ,this->actualRotation + 0.7 );
+
+    }else if (copy.front().dist > 500 + BREAKSPEED){                                //--FORWARD CASE
+        return std::make_tuple(State::FORWARD, MAX_ADV_SPEED, 0);
+
+    }else{                                                                          //--TURN CASE
+        if (binario == 0) {
+             rotation = MAX_ROT_SPEED;
+        }else {
+            rotation = -MAX_ROT_SPEED;
+        }
+    return std::make_tuple(State::TURN, BREAKSPEED, rotation);
     }
-    //COMPROBACIÓN DEL ESTADO ACTUAL DEL ROBOT (Se modifica el valor de la tupla State)
-    if (copy.front().dist <= 200) {                                           //CASO DISTANCIA REDUCIDA igual o menor 200 CAMBIA EL ESTADO A TURN.
-        std::get<0>(result) = State::TURN;
-
-    } else if ((copy.front().dist > 200) && (copy.front().dist <= 500) ) {    // CASO DISTANCIA MAYOR A 200 Y MENOR 500 CAMBIA EL ESTADO A WALL.
-        std::get<0>(result) = State::WALL;
-
-    } else if ((copy.front().dist > 500) && (copy.front().dist <= 1000) ) {   // CASO DISTANCIA MAYOR A 200 Y MENOR 1000 CAMBIA EL ESTADO A FORWARD.
-        std::get<0>(result) = State::FORWARD; //No tendria efecto sobre el estado actual
-
-    } else if (copy.front().dist > 1000) {                                    //CASO DISTANCIA MAYOR 1000 CAMBIA EL ESTADO A SPIRAL.
-        std::get<0>(result) = State::SPIRAL;
-
-    } else {
-        std::get<0>(result) = State::TURN;                                 //CASO OCIOSO DE NO ESTAR REFLEJADO.
-
-    }
-    return result;
 
 }
 
-//----------------------------------TODO-----------------------------//
-//----------------------------------TOCHECK--------------------------//
+                //----------------------------SPIRAL METHOD-----------------------------//
+
+SpecificWorker::Action SpecificWorker::SPIRAL_method(const RoboCompLaserMulti::TLaserData &ldata) {
+    std::tuple<SpecificWorker::State, float, float> result;
+    int binario = std::rand() % 2;
+    float rotation;
+    const int part = 3;
+
+    //COPIA DE LOS VALORES DEL LASER
+    RoboCompLaserMulti::TLaserData copy;
+    copy.assign(ldata.begin() + ldata.size() / part, ldata.end() - ldata.size() / part);
+    std::ranges::sort(copy, {}, &RoboCompLaserMulti::TData::dist);
+    qInfo() << copy.front().dist;
+
+    if (copy.front().dist <= 500 + BREAKSPEED) {                                     //--CASO TURN
+        if (binario == 0) {
+            rotation = MAX_ROT_SPEED;
+        } else {
+            rotation = -MAX_ROT_SPEED;
+        }
+        return std::make_tuple(State::TURN, BREAKSPEED, rotation);
+
+    } else if (copy.front().dist > 1500) {
+        return std::make_tuple(State::SPIRAL, 400, this->actualRotation + 0.7);     //--SPIRAL CASE
+    }
+    return std::make_tuple(State::FORWARD, MAX_ADV_SPEED, 0);                    //--FORWARD CASE
+}
+
+
+
+                //----------------------------WALL METHOD-----------------------------//
+
 SpecificWorker::Action SpecificWorker::WALL_method(const RoboCompLaserMulti::TLaserData &ldata)
 {
     std::tuple<SpecificWorker::State, float, float> result;
@@ -249,70 +272,12 @@ SpecificWorker::Action SpecificWorker::WALL_method(const RoboCompLaserMulti::TLa
     std::ranges::sort(copy, {}, &RoboCompLaserMulti::TData::dist);
     qInfo() << copy.front().dist;
 
-    //MODIFICACION PARA REALIZAR EL FORWARD (Modifico la tupla result)
-    // EL robot baja su velocidad y gira de forma que quede en paralelo con el obtaculo detectado
-    std::get<1>(result) = 300;
-    std::get<2>(result) = M_PI/2;
 
-    //COMPROBACIÓN DEL ESTADO ACTUAL DEL ROBOT (Se modifica el valor de la tupla State)
-    if (copy.front().dist <= 200) {                                           //CASO DISTANCIA REDUCIDA igual o menor 200 CAMBIA EL ESTADO A TURN.
-        std::get<0>(result) = State::TURN;
 
-    } else if ((copy.front().dist > 200) && (copy.front().dist <= 500) ) {    // CASO DISTANCIA MAYOR A 200 Y MENOR 500 CAMBIA EL ESTADO A WALL.
-        std::get<0>(result) = State::WALL;
-
-    } else if ((copy.front().dist > 500) && (copy.front().dist <= 1000) ) {   // CASO DISTANCIA MAYOR A 200 Y MENOR 1000 CAMBIA EL ESTADO A FORWARD.
-        std::get<0>(result) = State::FORWARD; //No tendria efecto sobre el estado actual
-
-    } else if (copy.front().dist > 1000) {                                    //CASO DISTANCIA MAYOR 1000 CAMBIA EL ESTADO A SPIRAL.
-        std::get<0>(result) = State::SPIRAL;
-
-    } else {
-        std::get<0>(result) = State::IDLE;                                 //CASO OCIOSO DE NO ESTAR REFLEJADO.
-
-    }
-    return result;
+    return std::make_tuple(State::FORWARD, MAX_ADV_SPEED, 0);
 }
 
-//----------------------------------TODO-----------------------------//
-//----------------------------------TOCHECK--------------------------//
-SpecificWorker::Action SpecificWorker::SPIRAL_method(const RoboCompLaserMulti::TLaserData &ldata)
-{
-    std::tuple<SpecificWorker::State, float, float> result;
-    const int part = 3;
 
-    //COPIA DE LOS VALORES DEL LASER
-    RoboCompLaserMulti::TLaserData copy;
-    copy.assign(ldata.begin() + ldata.size() / part, ldata.end() - ldata.size() / part);
-    std::ranges::sort(copy, {}, &RoboCompLaserMulti::TData::dist);
-    qInfo() << copy.front().dist;
-
-    //MODIFICACION PARA REALIZAR EL SPIRAL (Modifico la tupla result)
-    //modificaremos su valor de rotación griando el robot 30º aprox 0,524 radianes y mantiene una velocidad constante de 500
-    std::get<1>(result) = 500;
-    std::get<2>(result) = std::get<2>(result) + 0.524;
-
-
-    //COMPROBACIÓN DEL ESTADO ACTUAL DEL ROBOT (Se modifica el valor de la tupla State)
-    if (copy.front().dist <= 200) {                                           //CASO DISTANCIA REDUCIDA igual o menor 200 CAMBIA EL ESTADO A TURN.
-        std::get<0>(result) = State::TURN;
-
-    } else if ((copy.front().dist > 200) && (copy.front().dist <= 500) ) {    // CASO DISTANCIA MAYOR A 200 Y MENOR 500 CAMBIA EL ESTADO A WALL.
-        std::get<0>(result) = State::WALL;
-
-    } else if ((copy.front().dist > 500) && (copy.front().dist <= 1000) ) {   // CASO DISTANCIA MAYOR A 200 Y MENOR 1000 CAMBIA EL ESTADO A FORWARD.
-        std::get<0>(result) = State::FORWARD; //No tendria efecto sobre el estado actual
-
-    } else if (copy.front().dist > 1000) {                                    //CASO DISTANCIA MAYOR 1000 CAMBIA EL ESTADO A SPIRAL.
-        std::get<0>(result) = State::SPIRAL;
-
-    } else {
-        std::get<0>(result) = State::IDLE;                                 //CASO OCIOSO DE NO ESTAR REFLEJADO.
-
-    }
-    return result;
-
-}
 
 /**************************************/
 // From the RoboCompDifferentialRobot you can call this methods:
