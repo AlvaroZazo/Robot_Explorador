@@ -50,15 +50,20 @@ private:
     enum class State {IDLE, FORWARD, TURN, WALL, SPIRAL};
     State state = State::IDLE;
     using Action = std::tuple<State, float, float>;
+
     float actualRotation;
     float actualSpeed;
+
+    float reactionDistance;
 
     Action IDLE_method(const RoboCompLaserMulti::TLaserData &ldata);
     Action FORWARD_method(const RoboCompLaserMulti::TLaserData &ldata);
     Action TURN_method(const RoboCompLaserMulti::TLaserData &ldata);
     Action WALL_method(const RoboCompLaserMulti::TLaserData &ldata);
     Action SPIRAL_method(const RoboCompLaserMulti::TLaserData &ldata);
+    //AUX METHODS
     Action TURN_PROC_method(float laserLeft, float laserRight);
+    float UPDATE_DIST_REACT_method(float currentSpeed);
     std::tuple<State, float, float> result;    //State -> enum class
 };
 

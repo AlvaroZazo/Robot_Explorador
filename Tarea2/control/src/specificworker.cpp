@@ -24,9 +24,9 @@
 
 enum class State {IDLE, FORWARD, TURN, FOLLOW_WALL, SPIRAL};
 int MAX_ADV_SPEED= 1000;
-float BREAKSPEED = - MAX_ADV_SPEED/3;
+float BREAKSPEED = -(MAX_ADV_SPEED/4);
 float TURN_ROTATION = 1;
-float BASESPEED = 500;
+float BASESPEED = 700; //Sale de espiral y este es el valor de reseteo de la velocidad
 float MAX_ROT_SPEED = 3.14;
 
 SpecificWorker::SpecificWorker(TuplePrx tprx, bool startup_check) : GenericWorker(tprx)
@@ -66,6 +66,7 @@ void SpecificWorker::initialize(int period)
     {
         this->actualRotation = 0.2;
         this->actualSpeed = 500;
+        this->reactionDistance = actualSpeed/4;
         this->result = std::make_tuple(State::IDLE,actualSpeed,actualRotation);
         timer.start(Period);
     }
@@ -159,13 +160,18 @@ SpecificWorker::Action SpecificWorker::IDLE_method(const RoboCompLaserMulti::TLa
     qInfo() << copyRight.front().dist<< "Laser Izquierda";
 
 
-    if (copy.front().dist <= 500 || copyLeft.front().dist <= 500  || copyRight.front().dist <= 500 ) {    //--CASO TURN
+    if (copy.front().dist <= 500 + this->reactionDistance || copyLeft.front().dist <= 500 + this->reactionDistance ||
+    copyRight.front().dist <= 500 + this->reactionDistance ) {    //--CASO TURN
         return TURN_PROC_method(copyLeft.front().dist,copyRight.front().dist);
 
     } else if(copy.front().dist > 1500 && copyLeft.front().dist > 1000 && copyRight.front().dist > 1000 ){ //--SPIRAL CASE
-        return std::make_tuple(State::SPIRAL, this->actualSpeed + 50 , this->actualRotation + 0.5);
+        this->actualSpeed = 100;
+        float speed = this->actualSpeed + 50;
+        UPDATE_DIST_REACT_method(speed);
+        return std::make_tuple(State::SPIRAL, speed , this->actualRotation + 0.5);
     }
 
+    UPDATE_DIST_REACT_method(MAX_ADV_SPEED);
     return std::make_tuple(State::FORWARD, MAX_ADV_SPEED, 0);                                          //--FORWARD CASE
 
 
@@ -202,12 +208,17 @@ SpecificWorker::Action SpecificWorker::FORWARD_method(const RoboCompLaserMulti::
 
 
     //El robot se acerca demasiado a una pared.
-    if (copy.front().dist <= 500 || copyLeft.front().dist <= 500  || copyRight.front().dist <= 500 ) {   //--CASO TURN
+    if (copy.front().dist <= 500 + this->reactionDistance || copyLeft.front().dist <= 500 + this->reactionDistance  ||
+    copyRight.front().dist <= 500 + this->reactionDistance ) {   //--CASO TURN
         return TURN_PROC_method(copyLeft.front().dist,copyRight.front().dist);
 
     }else if(copy.front().dist > 1500 && copyLeft.front().dist > 1000 && copyRight.front().dist > 1000 ){ //--SPIRAL CASE
-        return std::make_tuple(State::SPIRAL, this->actualSpeed + 50 , this->actualRotation + 0.5);
+        this->actualSpeed = 100;
+        float speed = this->actualSpeed + 50;
+        UPDATE_DIST_REACT_method(speed);
+        return std::make_tuple(State::SPIRAL, speed , this->actualRotation + 0.5);
 }
+    UPDATE_DIST_REACT_method(MAX_ADV_SPEED);
     return std::make_tuple(State::FORWARD, MAX_ADV_SPEED, 0);                                         //--FORWARD CASE
 }
 
@@ -243,9 +254,14 @@ SpecificWorker::Action SpecificWorker::TURN_method(const RoboCompLaserMulti::TLa
 
 
     if(copy.front().dist > 1500 && copyLeft.front().dist > 1000 && copyRight.front().dist > 1000 ){ //--SPIRAL CASE
-        return std::make_tuple(State::SPIRAL, this->actualSpeed + 50 , this->actualRotation + 0.5);
+        this->actualSpeed = 100;
+        float speed = this->actualSpeed + 50;
+        UPDATE_DIST_REACT_method(speed);
+        return std::make_tuple(State::SPIRAL, speed , this->actualRotation + 0.5);
 
-    }else if (copy.front().dist > 500 || copyLeft.front().dist > 500  || copyRight.front().dist > 500 ) {  //--FORWARD CASE
+    }else if (copy.front().dist > 500 + this->reactionDistance || copyLeft.front().dist > 500 + this->reactionDistance  ||
+    copyRight.front().dist > 500+ this->reactionDistance ) {                                                //--FORWARD CASE
+        UPDATE_DIST_REACT_method(MAX_ADV_SPEED);
         return std::make_tuple(State::FORWARD, MAX_ADV_SPEED, 0);
 
     }else{                                                                                                 //--TURN CASE
@@ -287,19 +303,23 @@ SpecificWorker::Action SpecificWorker::SPIRAL_method(const RoboCompLaserMulti::T
     qInfo() << copyRight.front().dist<< "Laser Izquierda";
 
 
-    if (copy.front().dist <= 500 || copyLeft.front().dist <= 500  || copyRight.front().dist <= 500 ) {  //--CASO TURN
+    if (copy.front().dist <= 500 + this->reactionDistance || copyLeft.front().dist <= 500 + this->reactionDistance  ||
+    copyRight.front().dist <= 500 + this->reactionDistance) {  //--CASO TURN
         //reset speed
         this->actualRotation = 0;
         this->actualSpeed = BASESPEED;
 
         return TURN_PROC_method(copyLeft.front().dist,copyRight.front().dist);
 
-    } else if (copy.front().dist > 1500 && copyLeft.front().dist > 1000 && copyRight.front().dist > 1000  ) {
-        return std::make_tuple(State::SPIRAL, this->actualSpeed + 50 , this->actualRotation + 0.5);     //--SPIRAL CASE
+    } else if (copy.front().dist > 1500 && copyLeft.front().dist > 1000 && copyRight.front().dist > 1000  ) {//--SPIRAL CASE
+        float speed = this->actualSpeed + 50;
+        UPDATE_DIST_REACT_method(speed);
+        return std::make_tuple(State::SPIRAL, speed , this->actualRotation + 0.5);
     }
     //reset speed
     this->actualRotation = 0;
     this->actualSpeed = BASESPEED;
+    UPDATE_DIST_REACT_method(MAX_ADV_SPEED);
     return std::make_tuple(State::FORWARD, MAX_ADV_SPEED, 0);                    //--FORWARD CASE
 }
 
@@ -352,6 +372,10 @@ SpecificWorker::Action SpecificWorker::TURN_PROC_method(float laserLeft, float l
     }
 
     return std::make_tuple(State::TURN, BREAKSPEED, rotation);
+}
+
+float SpecificWorker::UPDATE_DIST_REACT_method(float currentSpeed) {
+    return currentSpeed/4;
 }
 
 /**************************************/
