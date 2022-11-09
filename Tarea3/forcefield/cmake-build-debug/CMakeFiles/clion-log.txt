@@ -1,0 +1,4 @@
+Cannot generate into /home/robocomp/robocomp/components/Robotica/Tarea3/forcefield
+It is already used for project /home/alumno/robocomp/components/Robotica/Tarea 3/forcefield
+
+Please either delete it manually or select another generation directory
