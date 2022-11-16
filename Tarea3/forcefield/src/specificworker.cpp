@@ -173,7 +173,7 @@ void SpecificWorker::compute()
     omni_depth_frame = read_depth_coppelia();
     if(omni_depth_frame.empty()) { qWarning() << "omni_depth_frame empty"; return;}
 
-    /// top camera
+    /// top camera  Lectura de imagenes de la cámara del robot
     auto top_rgb_frame = read_rgb("/Shadow/camera_top");
     if(top_rgb_frame.empty()) { qWarning() << "rgb_top_frame empty"; return;}
     auto [top_depth_frame, focalx, focaly] = read_depth_top("/Shadow/camera_top");
@@ -190,10 +190,8 @@ void SpecificWorker::compute()
     draw_floor_line(omni_lines, 1);
     auto current_line = omni_lines[1];  // second line of the list of laser lines at different heights
 
-    /// YOLO
+    /// YOLO acquire the yolo list detection from the Yolo component
     RoboCompYoloObjects::TObjects objects = yolo_detect_objects(top_rgb_frame);
-
-
 
     /// draw top image
     cv::imshow("top", top_rgb_frame); cv::waitKey(3);
@@ -202,21 +200,8 @@ void SpecificWorker::compute()
     draw_objects_on_2dview(objects, RoboCompYoloObjects::TBox());
 
     // TODO: state machine to activate basic behaviours. Returns a current target vector
-    std::vector<Eigen::Vector2f> target_vector;
-    switch(this->state)
-    {
-        case: IDLE
-
-        case: SEARCHING
-
-        case: APPROACHING
-
-        case: WAITING
-
-
-    }
-    state = std::get<State>(target_vector);
-
+        // state machine to activate basic behaviours. Returns a  target_coordinates vector
+        state_machine(objects, current_line);
 
 
     /// eye tracking: tracks  current selected object or  selects a new one
@@ -576,7 +561,32 @@ void SpecificWorker::JoystickAdapter_sendData(RoboCompJoystickAdapter::TData dat
 }
 
 // STATESM0MACHINE
+Eigen::Vector2f SpecificWorker::state_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line){
+    switch(state){
+        case State::SEARCHING:
+            search_state(objects);
+            break;
+        case State::APPROACHING:
+            approach_state(objects,line);
+            break;
+    }
+}
 
+Eigen::Vector2f SpecificWorker::search_state(const RoboCompYoloObjects::TObjects &objects){
+
+
+    if(robot.current_target.){
+
+
+    } else {
+
+    }
+
+}
+
+Eigen::Vector2f approach_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line){
+
+}
 /*
 Eigen::Vector2f search_state(const RoboCompYoloObjects::TObjects &objects){
 
