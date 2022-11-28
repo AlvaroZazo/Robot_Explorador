@@ -125,6 +125,12 @@
 			null
 		],
 		[
+			"/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/camera.h",
+			"MU",
+			"EWIEGA46WW/moc_camera.cpp",
+			null
+		],
+		[
 			"/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/commonbehaviorI.h",
 			"MU",
 			"EWIEGA46WW/moc_commonbehaviorI.cpp",
@@ -152,6 +158,12 @@
 			"/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/joystickadapterI.h",
 			"MU",
 			"EWIEGA46WW/moc_joystickadapterI.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/robot.h",
+			"MU",
+			"EWIEGA46WW/moc_robot.cpp",
 			null
 		],
 		[
@@ -266,6 +278,11 @@
 		],
 		[ "/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp", "MU", null ],
 		[
+			"/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/camera.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/commonbehaviorI.cpp",
 			"MU",
 			null
@@ -292,6 +309,11 @@
 		],
 		[
 			"/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/robot.cpp",
 			"MU",
 			null
 		],

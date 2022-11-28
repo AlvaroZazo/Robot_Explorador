@@ -10,9 +10,11 @@
   /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/JoystickAdapter.h \
   /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/OmniRobot.h \
   /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/YoloObjects.h \
+  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/camera.h \
   /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/config.h \
   /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/dynamic_window.h \
   /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/genericworker.h \
+  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/robot.h \
   /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/ui_mainUI.h \
   /usr/include/GL/gl.h \
   /usr/include/Ice/AsyncResult.h \
@@ -790,6 +792,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qwaitcondition.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QMatrix3x3 \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QMatrix4x4 \

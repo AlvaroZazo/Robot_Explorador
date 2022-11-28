@@ -67,8 +67,8 @@ CMAKE_BINARY_DIR = /home/alumno/robocomp/components/Robotica/Tarea3/forcefield
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/snap/clion/209/bin/cmake/linux/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -371,6 +371,30 @@ YoloObjects.cpp.s:
 	cd /home/alumno/robocomp/components/Robotica/Tarea3/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/YoloObjects.cpp.s
 .PHONY : YoloObjects.cpp.s
 
+camera.o: camera.cpp.o
+.PHONY : camera.o
+
+# target to build an object file
+camera.cpp.o:
+	cd /home/alumno/robocomp/components/Robotica/Tarea3/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/camera.cpp.o
+.PHONY : camera.cpp.o
+
+camera.i: camera.cpp.i
+.PHONY : camera.i
+
+# target to preprocess a source file
+camera.cpp.i:
+	cd /home/alumno/robocomp/components/Robotica/Tarea3/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/camera.cpp.i
+.PHONY : camera.cpp.i
+
+camera.s: camera.cpp.s
+.PHONY : camera.s
+
+# target to generate assembly for a file
+camera.cpp.s:
+	cd /home/alumno/robocomp/components/Robotica/Tarea3/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/camera.cpp.s
+.PHONY : camera.cpp.s
+
 commonbehaviorI.o: commonbehaviorI.cpp.o
 .PHONY : commonbehaviorI.o
 
@@ -635,6 +659,30 @@ main.cpp.s:
 	cd /home/alumno/robocomp/components/Robotica/Tarea3/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+robot.o: robot.cpp.o
+.PHONY : robot.o
+
+# target to build an object file
+robot.cpp.o:
+	cd /home/alumno/robocomp/components/Robotica/Tarea3/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/robot.cpp.o
+.PHONY : robot.cpp.o
+
+robot.i: robot.cpp.i
+.PHONY : robot.i
+
+# target to preprocess a source file
+robot.cpp.i:
+	cd /home/alumno/robocomp/components/Robotica/Tarea3/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/robot.cpp.i
+.PHONY : robot.cpp.i
+
+robot.s: robot.cpp.s
+.PHONY : robot.s
+
+# target to generate assembly for a file
+robot.cpp.s:
+	cd /home/alumno/robocomp/components/Robotica/Tarea3/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/robot.cpp.s
+.PHONY : robot.cpp.s
+
 specificmonitor.o: specificmonitor.cpp.o
 .PHONY : specificmonitor.o
 
@@ -719,6 +767,9 @@ help:
 	@echo "... YoloObjects.o"
 	@echo "... YoloObjects.i"
 	@echo "... YoloObjects.s"
+	@echo "... camera.o"
+	@echo "... camera.i"
+	@echo "... camera.s"
 	@echo "... commonbehaviorI.o"
 	@echo "... commonbehaviorI.i"
 	@echo "... commonbehaviorI.s"
@@ -752,6 +803,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... robot.o"
+	@echo "... robot.i"
+	@echo "... robot.s"
 	@echo "... specificmonitor.o"
 	@echo "... specificmonitor.i"
 	@echo "... specificmonitor.s"

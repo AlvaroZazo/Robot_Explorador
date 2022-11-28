@@ -1,4 +1,4 @@
-/snap/clion/209/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/alumno/robocomp/components/Robotica/Tarea3/forcefield -B /home/alumno/robocomp/components/Robotica/Tarea3/forcefield
+/snap/clion/209/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/alumno/robocomp/components/Robotica/Tarea3/forcefield -B /home/alumno/robocomp/components/Robotica/Tarea3/forcefield
 CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
   Compatibility with CMake < 2.8.12 will be removed from a future version of
   CMake.
@@ -24,6 +24,7 @@ CMake Warning at src/CMakeLists.txt:5 (MESSAGE):
 
 
 -- COMPILING WITH QT5
+-- Found OpenCV: /usr (found suitable version "4.5.4", minimum required is "4") 
 -- opencv_calib3dopencv_coreopencv_dnnopencv_features2dopencv_flannopencv_highguiopencv_imgcodecsopencv_imgprocopencv_mlopencv_objdetectopencv_photoopencv_stitchingopencv_videoopencv_videoioopencv_alphamatopencv_arucoopencv_barcodeopencv_bgsegmopencv_bioinspiredopencv_ccalibopencv_datasetsopencv_dnn_objdetectopencv_dnn_superresopencv_dpmopencv_faceopencv_freetypeopencv_fuzzyopencv_hdfopencv_hfsopencv_img_hashopencv_intensity_transformopencv_line_descriptoropencv_mccopencv_optflowopencv_phase_unwrappingopencv_plotopencv_qualityopencv_rapidopencv_regopencv_rgbdopencv_saliencyopencv_shapeopencv_stereoopencv_structured_lightopencv_superresopencv_surface_matchingopencv_textopencv_trackingopencv_videostabopencv_vizopencv_wechat_qrcodeopencv_ximgprocopencv_xobjdetectopencv_xphoto
 -- Ice version: 3.7.6
 -- Found the following Ice libraries:
@@ -32,6 +33,11 @@ CMake Warning at src/CMakeLists.txt:5 (MESSAGE):
 -- Found Ice: /usr/bin/slice2cpp (found version "3.7.6") 
 -- RoboComp root is now set to /opt/robocomp//
 -- 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
 -- Ice version: 3.7.6
 -- Found the following Ice libraries:
 --   Ice (required)

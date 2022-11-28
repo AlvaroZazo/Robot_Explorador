@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/JoystickAdapter.cpp" "src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o.d"
   "/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/OmniRobot.cpp" "src/CMakeFiles/forcefield.dir/OmniRobot.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/OmniRobot.cpp.o.d"
   "/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/YoloObjects.cpp" "src/CMakeFiles/forcefield.dir/YoloObjects.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/YoloObjects.cpp.o.d"
+  "/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/camera.cpp" "src/CMakeFiles/forcefield.dir/camera.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/camera.cpp.o.d"
   "/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/commonbehaviorI.cpp" "src/CMakeFiles/forcefield.dir/commonbehaviorI.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/commonbehaviorI.cpp.o.d"
   "/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/dynamic_window.cpp" "src/CMakeFiles/forcefield.dir/dynamic_window.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/dynamic_window.cpp.o.d"
   "/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/forcefield_autogen/mocs_compilation.cpp" "src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o.d"
@@ -26,6 +27,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp" "src/CMakeFiles/forcefield.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp.o.d"
   "/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/joystickadapterI.cpp" "src/CMakeFiles/forcefield.dir/joystickadapterI.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/joystickadapterI.cpp.o.d"
   "/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/main.cpp" "src/CMakeFiles/forcefield.dir/main.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/main.cpp.o.d"
+  "/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/robot.cpp" "src/CMakeFiles/forcefield.dir/robot.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/robot.cpp.o.d"
   "/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/specificmonitor.cpp" "src/CMakeFiles/forcefield.dir/specificmonitor.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/specificmonitor.cpp.o.d"
   "/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/specificworker.cpp" "src/CMakeFiles/forcefield.dir/specificworker.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/specificworker.cpp.o.d"
   )

@@ -1,0 +1,16 @@
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/CMakeFiles/install.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/CMakeFiles/install/local.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/src/CMakeFiles/ICES__home_alumno_robocomp_components_robotica_tarea3_forcefield_src.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/src/CMakeFiles/forcefield.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/src/CMakeFiles/list_install_components.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/src/CMakeFiles/install.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/src/CMakeFiles/install/local.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/src/CMakeFiles/install/strip.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/src/CMakeFiles/forcefield_autogen_timestamp_deps.dir
+/home/alumno/robocomp/components/robotica/tarea3/forcefield/cmake-build-debug/src/CMakeFiles/forcefield_autogen.dir

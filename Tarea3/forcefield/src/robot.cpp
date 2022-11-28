@@ -16,6 +16,8 @@ namespace rc
     {
         if(not has_target_flag)
             return Eigen::Vector3f{0.f, 0.f, 0.f};
+        if(get_pure_rotation() != 0)
+            return Eigen::Vector3f{0.f, 0.f, get_pure_rotation()};
 
         Eigen::Transform<float, 3, Eigen::Affine> tf = get_tf_cam_to_base();
         Eigen::Vector3f target = tf * get_camera_target_coordinates();
@@ -23,6 +25,11 @@ namespace rc
         target = target.normalized() * (target.norm() - min_distance_to_target);  // set target coordinates before the real target
         return target;
     }
+
+    float Robot::get_pure_rotation() const {
+        return pure_rotation;
+    }
+
     Eigen::Vector3f Robot::get_camera_target_coordinates() const
     {
         return Eigen::Vector3f{current_target.x, current_target.y, current_target.z};
@@ -55,6 +62,11 @@ namespace rc
         if(val == false)
             current_target.type = -1;
     }
+
+    void Robot::set_pure_rotation(float rot) {
+        pure_rotation = rot;
+    }
+
     bool Robot::has_target() const
     {
         return has_target_flag;
@@ -218,6 +230,8 @@ namespace rc
         catch (const Ice::Exception &e)
         { std::cout << e.what() << " Error reading omnirobot_proxy::getBaseSpeed" << std::endl; }
     }
+
+
 
 
 } // rc
