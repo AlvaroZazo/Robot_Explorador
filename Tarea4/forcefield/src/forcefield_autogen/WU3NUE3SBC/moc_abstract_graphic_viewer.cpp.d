@@ -1,5 +1,5 @@
-/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/forcefield_autogen/WU3NUE3SBC/moc_abstract_graphic_viewer.cpp: /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/forcefield_autogen/moc_predefs.h \
+/home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/forcefield_autogen/WU3NUE3SBC/moc_abstract_graphic_viewer.cpp: /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/forcefield_autogen/moc_predefs.h \
   /usr/include/GL/gl.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

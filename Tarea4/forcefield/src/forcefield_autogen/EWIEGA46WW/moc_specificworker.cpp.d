@@ -1,21 +1,23 @@
-/home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificworker.cpp: /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/specificworker.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/forcefield_autogen/moc_predefs.h \
-  /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
-  /home/alumno/robocomp/classes/qlog/qlog.h \
-  /home/alumno/robocomp/classes/timer/timer.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/CameraRGBDSimple.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/CommonBehavior.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/GenericBase.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/JointMotorSimple.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/JoystickAdapter.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/OmniRobot.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/YoloObjects.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/camera.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/config.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/dynamic_window.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/genericworker.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/robot.h \
-  /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/ui_mainUI.h \
+/home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificworker.cpp: /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/specificworker.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/forcefield_autogen/moc_predefs.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/CameraRGBDSimple.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/CommonBehavior.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/GenericBase.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/JointMotorSimple.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/JoystickAdapter.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/OmniRobot.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/YoloObjects.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/camera.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/config.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/door_detector.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/dynamic_window.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/genericworker.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/robot.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/specificworker.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/ui_mainUI.h \
+  /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+  /opt/robocomp/classes/qlog/qlog.h \
+  /opt/robocomp/classes/timer/timer.h \
   /usr/include/GL/gl.h \
   /usr/include/Ice/AsyncResult.h \
   /usr/include/Ice/BatchRequestQueueF.h \
@@ -144,6 +146,7 @@
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/ptr_traits.h \
@@ -273,6 +276,7 @@
   /usr/include/c++/11/typeinfo \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/utility \
+  /usr/include/c++/11/variant \
   /usr/include/c++/11/vector \
   /usr/include/ctype.h \
   /usr/include/eigen3/Eigen/Cholesky \
@@ -960,4 +964,13 @@
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/local/include/cppitertools/chunked.hpp \
+  /usr/local/include/cppitertools/combinations_with_replacement.hpp \
+  /usr/local/include/cppitertools/enumerate.hpp \
+  /usr/local/include/cppitertools/filter.hpp \
+  /usr/local/include/cppitertools/internal/iterator_wrapper.hpp \
+  /usr/local/include/cppitertools/internal/iteratoriterator.hpp \
+  /usr/local/include/cppitertools/internal/iterbase.hpp \
+  /usr/local/include/cppitertools/range.hpp \
+  /usr/local/include/cppitertools/sliding_window.hpp

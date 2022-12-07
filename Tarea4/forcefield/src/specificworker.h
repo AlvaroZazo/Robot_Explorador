@@ -38,6 +38,7 @@
 #include <timer/timer.h>
 #include "robot.h"
 #include "camera.h"
+#include "door_detector.h"
 
 
 class SpecificWorker : public GenericWorker
@@ -118,7 +119,6 @@ class SpecificWorker : public GenericWorker
     void draw_objects_on_2dview(RoboCompYoloObjects::TObjects objects, const RoboCompYoloObjects::TBox &selected);
     void draw_dynamic_threshold(float threshold);
     void draw_top_camera_optic_ray();
-    void draw_doors(const std::vector<Eigen::Vector2f> &doors);
 
     // objects
     RoboCompYoloObjects::TObjectNames yolo_object_names;

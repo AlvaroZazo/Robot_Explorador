@@ -113,6 +113,12 @@
 			null
 		],
 		[
+			"/home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/door_detector.h",
+			"MU",
+			"EWIEGA46WW/moc_door_detector.cpp",
+			null
+		],
+		[
 			"/home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/dynamic_window.h",
 			"MU",
 			"EWIEGA46WW/moc_dynamic_window.cpp",
@@ -272,6 +278,11 @@
 		],
 		[
 			"/home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/commonbehaviorI.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/door_detector.cpp",
 			"MU",
 			null
 		],

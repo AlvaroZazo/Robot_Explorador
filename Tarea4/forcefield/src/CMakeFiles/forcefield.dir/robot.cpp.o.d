@@ -1,7 +1,7 @@
 src/CMakeFiles/forcefield.dir/robot.cpp.o: \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/robot.cpp \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/robot.cpp \
  /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/robot.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/robot.h \
  /usr/include/Eigen/Dense /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/Eigen/src/Core/util/Macros.h /usr/include/c++/11/cmath \
@@ -423,7 +423,7 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: \
  /usr/include/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/Eigen/src/Eigenvalues/./RealQZ.h \
  /usr/include/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/YoloObjects.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/YoloObjects.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/memory \
@@ -492,7 +492,7 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/Ice/FactoryTableInit.h \
  /usr/include/Ice/DefaultValueFactory.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/CameraRGBDSimple.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/CameraRGBDSimple.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
@@ -801,7 +801,7 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h \
- /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -869,7 +869,7 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPolygonItem \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/camera.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/camera.h \
  /usr/include/opencv4/opencv2/core.hpp \
  /usr/include/opencv4/opencv2/core/cvdef.h \
  /usr/include/opencv4/opencv2/core/version.hpp \
@@ -898,9 +898,9 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: \
  /usr/include/opencv4/opencv2/core/optim.hpp \
  /usr/include/opencv4/opencv2/core/ovx.hpp \
  /usr/include/opencv4/opencv2/core/cvdef.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/JointMotorSimple.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/OmniRobot.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/GenericBase.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/JointMotorSimple.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/OmniRobot.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/GenericBase.h \
  /usr/local/include/cppitertools/range.hpp \
  /usr/local/include/cppitertools/internal/iterbase.hpp \
  /usr/include/c++/11/optional /usr/include/c++/11/ranges

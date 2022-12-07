@@ -1,7 +1,7 @@
 src/CMakeFiles/forcefield.dir/camera.cpp.o: \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/camera.cpp \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/camera.cpp \
  /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/camera.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/camera.h \
  /usr/include/Eigen/Dense /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/Eigen/src/Core/util/Macros.h /usr/include/c++/11/cmath \
@@ -751,7 +751,7 @@ src/CMakeFiles/forcefield.dir/camera.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcoreversion.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/CameraRGBDSimple.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/CameraRGBDSimple.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/iostream /usr/include/Ice/ProxyHandle.h \

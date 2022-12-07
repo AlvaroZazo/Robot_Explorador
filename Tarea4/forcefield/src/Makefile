@@ -419,6 +419,30 @@ commonbehaviorI.cpp.s:
 	cd /home/alumno/robocomp/components/Robotica/Tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/commonbehaviorI.cpp.s
 .PHONY : commonbehaviorI.cpp.s
 
+door_detector.o: door_detector.cpp.o
+.PHONY : door_detector.o
+
+# target to build an object file
+door_detector.cpp.o:
+	cd /home/alumno/robocomp/components/Robotica/Tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/door_detector.cpp.o
+.PHONY : door_detector.cpp.o
+
+door_detector.i: door_detector.cpp.i
+.PHONY : door_detector.i
+
+# target to preprocess a source file
+door_detector.cpp.i:
+	cd /home/alumno/robocomp/components/Robotica/Tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/door_detector.cpp.i
+.PHONY : door_detector.cpp.i
+
+door_detector.s: door_detector.cpp.s
+.PHONY : door_detector.s
+
+# target to generate assembly for a file
+door_detector.cpp.s:
+	cd /home/alumno/robocomp/components/Robotica/Tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/door_detector.cpp.s
+.PHONY : door_detector.cpp.s
+
 dynamic_window.o: dynamic_window.cpp.o
 .PHONY : dynamic_window.o
 
@@ -773,6 +797,9 @@ help:
 	@echo "... commonbehaviorI.o"
 	@echo "... commonbehaviorI.i"
 	@echo "... commonbehaviorI.s"
+	@echo "... door_detector.o"
+	@echo "... door_detector.i"
+	@echo "... door_detector.s"
 	@echo "... dynamic_window.o"
 	@echo "... dynamic_window.i"
 	@echo "... dynamic_window.s"

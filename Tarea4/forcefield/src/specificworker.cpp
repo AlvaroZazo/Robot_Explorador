@@ -757,48 +757,10 @@ void SpecificWorker::JoystickAdapter_sendData(RoboCompJoystickAdapter::TData dat
 
 ///////////////////////////////////DETECTAR PUERTAS///////////////////////////
 
-std::vector<Eigen::Vector2f> SpecificWorker::door_detector(const vector<Eigen::Vector2f> &line) {
-    std::vector<float> derivaties(line.size() - 1);
-    for (auto &&[i, d]: line | iter::sliding_window(2) | iter::enumerate)
-        derivaties[i] = d[1].norm() - d[0].norm();
-
-    std::vector<std::tuple<int, bool>> peaks;
-    for (auto &&[i, d]: derivaties | iter::enumerate)
-        if (d > consts.door_dynamic_threshold)
-            peaks.push_back(std::make_tuple(i, true));
-        else
-            peaks.push_back(std::make_tuple(i, false));
-
-    std::vector<Eigen::Vector2f> doors;
-    for (auto &&p: peaks | iter::combinations_with_replacement(2)) {
-        auto &[p1, pos1] = p[0];
-        auto &[p2, pos2] = p[1];
-        auto v1 = line[p1];
-        auto v2 = line[p2];
-
-        if (((pos1 and not pos2) or (pos2 and not pos1)) and (v1 - v2).norm() < 1000 and (v1 - v2).norm() > 600)
-            doors.push_back((v1 + v2) / 2);
-    }
-    return doors;
-}
-
 SpecificWorker::SpecificWorker(const TuplePrx &tprx, const rc::Robot &robot) : GenericWorker(tprx), robot(robot) {}
 
 
-void SpecificWorker::draw_doors(const std::vector<Eigen::Vector2f> &doors) {
-    static std::vector<QGraphicsItem *> items;
-    for (const auto &i: items)
-        viewer->scene.removeItem(i);
-    items.clear();
 
-    for (const auto &d: doors) {
-        auto item = viewer->scene.addEllipse(-100, -100, 200, 2 * 200, QPen(QColor("magenta")),
-                                             QBrush(QColor("magenta")));
-        item->setPos(d.x(), d.y());
-        items.push_back(item);
-    }
-
-}
 
 
 /**************************************/

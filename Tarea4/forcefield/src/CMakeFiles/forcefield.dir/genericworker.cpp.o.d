@@ -1,8 +1,8 @@
 src/CMakeFiles/forcefield.dir/genericworker.cpp.o: \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/genericworker.cpp \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/genericworker.cpp \
  /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/genericworker.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/config.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/genericworker.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/config.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -18,8 +18,8 @@ src/CMakeFiles/forcefield.dir/genericworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/alumno/robocomp/classes/qlog/qlog.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/config.h \
+ /opt/robocomp/classes/qlog/qlog.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
@@ -960,7 +960,7 @@ src/CMakeFiles/forcefield.dir/genericworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/ui_mainUI.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
@@ -982,7 +982,7 @@ src/CMakeFiles/forcefield.dir/genericworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/CommonBehavior.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/CommonBehavior.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/cassert /usr/include/c++/11/sstream \
@@ -1027,9 +1027,9 @@ src/CMakeFiles/forcefield.dir/genericworker.cpp.o: \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/Ice/FactoryTableInit.h \
  /usr/include/Ice/DefaultValueFactory.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/CameraRGBDSimple.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/GenericBase.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/JointMotorSimple.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/JoystickAdapter.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/OmniRobot.h \
- /home/alumno/robocomp/components/Robotica/Tarea3/forcefield/src/YoloObjects.h
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/CameraRGBDSimple.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/GenericBase.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/JointMotorSimple.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/JoystickAdapter.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/OmniRobot.h \
+ /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/YoloObjects.h
