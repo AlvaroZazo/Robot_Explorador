@@ -39,13 +39,17 @@
 #include "robot.h"
 #include "camera.h"
 
+
 class SpecificWorker : public GenericWorker
 {
     Q_OBJECT
     using v2f = Eigen::Vector2f;
     public:
         SpecificWorker(TuplePrx tprx, bool startup_check);
-        ~SpecificWorker();
+
+    SpecificWorker(const TuplePrx &tprx, const rc::Robot &robot);
+
+    ~SpecificWorker();
         bool setParams(RoboCompCommonBehavior::ParameterList params);
 
         void JoystickAdapter_sendData(RoboCompJoystickAdapter::TData data);
@@ -93,6 +97,7 @@ class SpecificWorker : public GenericWorker
         const float forces_similarity_threshold = 200;
         double xset_gaussian = 0.4;             // gaussian break x set value
         double yset_gaussian = 0.3;             // gaussian break y set value
+        float door_dynamic_threshold = 500;
     };
     Constants consts;
     float current_servo_angle = 0.f;
@@ -113,6 +118,7 @@ class SpecificWorker : public GenericWorker
     void draw_objects_on_2dview(RoboCompYoloObjects::TObjects objects, const RoboCompYoloObjects::TBox &selected);
     void draw_dynamic_threshold(float threshold);
     void draw_top_camera_optic_ray();
+    void draw_doors(const std::vector<Eigen::Vector2f> &doors);
 
     // objects
     RoboCompYoloObjects::TObjectNames yolo_object_names;
@@ -128,7 +134,9 @@ class SpecificWorker : public GenericWorker
     State state = State::SEARCHING;
     void search_state(const RoboCompYoloObjects::TObjects &objects);
     void approach_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
-    void wait_state();
+    Eigen::Vector3f wait_state();
+
+    std::vector<Eigen::Vector2f> door_detector(const vector<Eigen::Vector2f> &line);
 
     float iou(const RoboCompYoloObjects::TBox &a, const RoboCompYoloObjects::TBox &b);
     float closest_distance_ahead(const vector<Eigen::Vector2f> &line);
