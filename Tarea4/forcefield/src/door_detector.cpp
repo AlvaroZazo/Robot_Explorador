@@ -3,20 +3,20 @@
 //
 
 #include "door_detector.h"
+#include "Door.h"
 
 
-
-std::vector<Door_detector::Door> Door_detector::door_detector(const vector<Eigen::Vector2f> &line, float door_dynamic_threshold) {
+std::vector<Door> Door_detector::door_detector(const vector<Eigen::Vector2f> &line, AbstractGraphicViewer *viewer) {
     std::vector<float> derivaties(line.size() - 1);
     for (auto &&[i, d]: line | iter::sliding_window(2) | iter::enumerate)
         derivaties[i] = d[1].norm() - d[0].norm();
 
     std::vector<std::tuple<int, bool>> peaks;
     for (auto &&[i, d]: derivaties | iter::enumerate)
-        if (d > door_dynamic_threshold)
+        if (d > 500)
             peaks.push_back(std::make_tuple(i, true));
-        else
-            peaks.push_back(std::make_tuple(i, false));
+        else if(d < -500)
+            peaks.push_back(std::make_tuple(i+1, false));
 
     std::vector<Door> doors;
 
@@ -34,7 +34,6 @@ std::vector<Door_detector::Door> Door_detector::door_detector(const vector<Eigen
             doors.push_back(door);
         }
 
-
     }
     return doors;
 }
@@ -44,7 +43,7 @@ std::vector<Door_detector::Door> Door_detector::door_detector(const vector<Eigen
 
 
 
-void Door_detector::draw_doors(const std::vector<Door> &doors) {
+void Door_detector::draw_doors(const std::vector<Door> &doors, AbstractGraphicViewer *viewer) {
     static std::vector<QGraphicsItem *> items;
     for (const auto &i: items)
         viewer->scene.removeItem(i);
@@ -56,6 +55,7 @@ void Door_detector::draw_doors(const std::vector<Door> &doors) {
         // Coordenadas de la puerta
         item->setPos(d.peak_left(0), d.peak_right(0));
         items.push_back(item);
+        printf("Puerta detected");
     }
 
 }

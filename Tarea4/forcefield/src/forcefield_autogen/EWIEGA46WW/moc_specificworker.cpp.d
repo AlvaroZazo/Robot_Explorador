@@ -2,6 +2,7 @@
   /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/forcefield_autogen/moc_predefs.h \
   /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/CameraRGBDSimple.h \
   /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/CommonBehavior.h \
+  /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/Door.h \
   /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/GenericBase.h \
   /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/JointMotorSimple.h \
   /home/alumno/robocomp/components/Robotica/Tarea4/forcefield/src/JoystickAdapter.h \

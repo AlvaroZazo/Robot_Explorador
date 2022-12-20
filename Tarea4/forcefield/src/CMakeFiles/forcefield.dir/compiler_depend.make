@@ -6267,16 +6267,17 @@ src/CMakeFiles/forcefield.dir/door_detector.cpp.o: src/door_detector.cpp \
   src/robot.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
   src/camera.h \
-  /usr/local/include/cppitertools/range.hpp \
-  /usr/local/include/cppitertools/internal/iterbase.hpp \
-  /usr/local/include/cppitertools/enumerate.hpp \
-  /usr/local/include/cppitertools/internal/iterator_wrapper.hpp \
-  /usr/local/include/cppitertools/internal/iterbase.hpp \
-  /usr/local/include/cppitertools/filter.hpp \
-  /usr/local/include/cppitertools/chunked.hpp \
+  src/Door.h \
+  /usr/local/include/cppitertools/combinations_with_replacement.hpp \
   /usr/local/include/cppitertools/internal/iteratoriterator.hpp \
+  /usr/local/include/cppitertools/internal/iterbase.hpp \
+  /usr/local/include/cppitertools/internal/iterbase.hpp \
   /usr/local/include/cppitertools/sliding_window.hpp \
-  /usr/local/include/cppitertools/combinations_with_replacement.hpp
+  /usr/local/include/cppitertools/internal/iterator_wrapper.hpp \
+  /usr/local/include/cppitertools/chunked.hpp \
+  /usr/local/include/cppitertools/filter.hpp \
+  /usr/local/include/cppitertools/enumerate.hpp \
+  /usr/local/include/cppitertools/range.hpp
 
 src/CMakeFiles/forcefield.dir/dynamic_window.cpp.o: src/dynamic_window.cpp \
   /usr/include/stdc-predef.h \
@@ -8669,16 +8670,17 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o: src/for
   src/camera.h \
   src/door_detector.h \
   src/specificworker.h \
-  /usr/local/include/cppitertools/range.hpp \
-  /usr/local/include/cppitertools/internal/iterbase.hpp \
-  /usr/local/include/cppitertools/enumerate.hpp \
-  /usr/local/include/cppitertools/internal/iterator_wrapper.hpp \
-  /usr/local/include/cppitertools/internal/iterbase.hpp \
-  /usr/local/include/cppitertools/filter.hpp \
-  /usr/local/include/cppitertools/chunked.hpp \
-  /usr/local/include/cppitertools/internal/iteratoriterator.hpp \
-  /usr/local/include/cppitertools/sliding_window.hpp \
+  src/Door.h \
   /usr/local/include/cppitertools/combinations_with_replacement.hpp \
+  /usr/local/include/cppitertools/internal/iteratoriterator.hpp \
+  /usr/local/include/cppitertools/internal/iterbase.hpp \
+  /usr/local/include/cppitertools/internal/iterbase.hpp \
+  /usr/local/include/cppitertools/sliding_window.hpp \
+  /usr/local/include/cppitertools/internal/iterator_wrapper.hpp \
+  /usr/local/include/cppitertools/chunked.hpp \
+  /usr/local/include/cppitertools/filter.hpp \
+  /usr/local/include/cppitertools/enumerate.hpp \
+  /usr/local/include/cppitertools/range.hpp \
   src/forcefield_autogen/WU3NUE3SBC/moc_abstract_graphic_viewer.cpp \
   /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h
 
@@ -13894,16 +13896,17 @@ src/CMakeFiles/forcefield.dir/main.cpp.o: src/main.cpp \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
   src/camera.h \
   src/door_detector.h \
-  /usr/local/include/cppitertools/range.hpp \
-  /usr/local/include/cppitertools/internal/iterbase.hpp \
-  /usr/local/include/cppitertools/enumerate.hpp \
-  /usr/local/include/cppitertools/internal/iterator_wrapper.hpp \
-  /usr/local/include/cppitertools/internal/iterbase.hpp \
-  /usr/local/include/cppitertools/filter.hpp \
-  /usr/local/include/cppitertools/chunked.hpp \
-  /usr/local/include/cppitertools/internal/iteratoriterator.hpp \
-  /usr/local/include/cppitertools/sliding_window.hpp \
+  src/Door.h \
   /usr/local/include/cppitertools/combinations_with_replacement.hpp \
+  /usr/local/include/cppitertools/internal/iteratoriterator.hpp \
+  /usr/local/include/cppitertools/internal/iterbase.hpp \
+  /usr/local/include/cppitertools/internal/iterbase.hpp \
+  /usr/local/include/cppitertools/sliding_window.hpp \
+  /usr/local/include/cppitertools/internal/iterator_wrapper.hpp \
+  /usr/local/include/cppitertools/chunked.hpp \
+  /usr/local/include/cppitertools/filter.hpp \
+  /usr/local/include/cppitertools/enumerate.hpp \
+  /usr/local/include/cppitertools/range.hpp \
   src/specificmonitor.h \
   src/commonbehaviorI.h \
   src/joystickadapterI.h
@@ -19996,16 +19999,17 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o: src/specificworker.cpp \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
   src/camera.h \
   src/door_detector.h \
-  /usr/local/include/cppitertools/range.hpp \
-  /usr/local/include/cppitertools/internal/iterbase.hpp \
-  /usr/local/include/cppitertools/enumerate.hpp \
-  /usr/local/include/cppitertools/internal/iterator_wrapper.hpp \
-  /usr/local/include/cppitertools/internal/iterbase.hpp \
-  /usr/local/include/cppitertools/filter.hpp \
-  /usr/local/include/cppitertools/chunked.hpp \
+  src/Door.h \
+  /usr/local/include/cppitertools/combinations_with_replacement.hpp \
   /usr/local/include/cppitertools/internal/iteratoriterator.hpp \
+  /usr/local/include/cppitertools/internal/iterbase.hpp \
+  /usr/local/include/cppitertools/internal/iterbase.hpp \
   /usr/local/include/cppitertools/sliding_window.hpp \
-  /usr/local/include/cppitertools/combinations_with_replacement.hpp
+  /usr/local/include/cppitertools/internal/iterator_wrapper.hpp \
+  /usr/local/include/cppitertools/chunked.hpp \
+  /usr/local/include/cppitertools/filter.hpp \
+  /usr/local/include/cppitertools/enumerate.hpp \
+  /usr/local/include/cppitertools/range.hpp
 
 
 src/specificworker.cpp:
@@ -22223,6 +22227,8 @@ src/dynamic_window.h:
 /usr/include/boost/type_traits/add_rvalue_reference.hpp:
 
 /usr/include/boost/type_traits/is_void.hpp:
+
+src/Door.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialogbuttonbox.h:
 

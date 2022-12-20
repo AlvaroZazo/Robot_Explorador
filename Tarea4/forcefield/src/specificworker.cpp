@@ -25,6 +25,7 @@
 #include <cppitertools/sliding_window.hpp>
 #include <cppitertools/combinations_with_replacement.hpp>
 
+
 /**
 * \brief Default constructor
 */
@@ -231,6 +232,15 @@ void SpecificWorker::compute() {
             top_rgb_frame);//esta lista hay que pasarsela al método state machine porque
     //es la que tiene los objetos detectados por la camara actualmente
 
+    ///DOOR DETECTOR
+    auto doors = this->door_detector.door_detector(current_line, viewer);
+    this->door_detector.draw_doors(doors, viewer);
+
+    ///SAVE DOORS AND OBJECTS INTO GENERIC_OBJECT TYPE
+    std::vector<Generic_Object> generic_object_vector = this->generic_object.save_objects(objects);
+    this->generic_object.save_doors(doors, generic_object_vector);
+
+
 
     /// draw top image
     cv::imshow("top", top_rgb_frame);
@@ -238,6 +248,7 @@ void SpecificWorker::compute() {
 
     /// draw yolo_objects on 2D view
     draw_objects_on_2dview(objects, RoboCompYoloObjects::TBox());
+
 
     // state machine to activate basic behaviours. Returns a  target_coordinates vector
     state_machine(objects, current_line);
@@ -516,6 +527,7 @@ void SpecificWorker::search_state(const RoboCompYoloObjects::TObjects &objects) 
         //Cambia el estado a aproximando.
         state = State::APPROACHING;
         std::cout << "Ha encontrado un objetivo" << std::endl;
+
     }
 }
 
@@ -534,7 +546,8 @@ SpecificWorker::approach_state(const RoboCompYoloObjects::TObjects &objects, con
             robot.set_current_target(*it);
         } else {
             //En caso de no encontrar nada el objetivo se habrá perdido y el estado cambia a WAITING
-            state = State::WAITING;
+            state = State::WAITING;  //Target not found change into state WAITING.
+
         }
     }
 }
@@ -758,6 +771,8 @@ void SpecificWorker::JoystickAdapter_sendData(RoboCompJoystickAdapter::TData dat
 ///////////////////////////////////DETECTAR PUERTAS///////////////////////////
 
 SpecificWorker::SpecificWorker(const TuplePrx &tprx, const rc::Robot &robot) : GenericWorker(tprx), robot(robot) {}
+
+
 
 
 

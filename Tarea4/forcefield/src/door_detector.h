@@ -6,6 +6,7 @@
 #define FORCEFIELD_DOOR_DETECTOR_H
 
 #include "specificworker.h"
+#include "Door.h"
 #include <cppitertools/range.hpp>
 #include <cppitertools/enumerate.hpp>
 #include <cppitertools/filter.hpp>
@@ -21,22 +22,12 @@ private:
 
 public:
     //VARS
-    AbstractGraphicViewer *viewer;
-
-    //STRUCT DOORS
-    struct Door {
-
-        Eigen::Vector2f peak_left;
-        Eigen::Vector2f peak_right;
-        Eigen::Vector2f center;
-
-
-    };
+    Door door;
 
     //METHODS
 
-    void draw_doors(const std::vector<Door> &doors);
-    std::vector<Door> door_detector(const vector<Eigen::Vector2f> &line, float door_dynamic_threshold);
+    void draw_doors(const std::vector<Door> &doors, AbstractGraphicViewer *viewer);
+    std::vector<Door> door_detector(const vector<Eigen::Vector2f> &line, AbstractGraphicViewer *viewer);
 };
 
 
